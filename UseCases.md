@@ -1,8 +1,8 @@
-# Diagrama de Casos de Uso
+# Use Cases Diagram
 
 ![Diagrama de Casos de Uso](CasosUso/DUC_IT2.png)
 
-# Casos de Uso
+# Use Cases
 | UC    | Descrição                                                                                                  |
 | :---- | :------------------------------------------------------------------------                                  |
 | UC1   | [Efetuar Registo como Cliente](CasosUso/UC1_EfetuarRegistoCliente.md)                                      |

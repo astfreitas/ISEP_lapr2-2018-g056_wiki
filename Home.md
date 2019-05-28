@@ -1,6 +1,5 @@
-#Iteração 3
+#LAPR2 Project - Group 56
 
-* [Enunciado](Enunciado.md)
-* [Engenharia de Requisitos](EngenhariaRequisitos.md)
-* [Análise OO](AnaliseOO.md)
-* [Design OO](DesignOO.md)
+* [Requirements Engineering](RequirementsEngineering.md)
+* [OO Analysis](OOAnalysis.md)
+* [OO Design](OODesign.md)
