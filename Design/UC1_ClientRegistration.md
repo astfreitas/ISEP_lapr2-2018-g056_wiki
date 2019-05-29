@@ -17,13 +17,12 @@
 | 6. The system validates and stores the entered address. | ... save the created Address instance? |Client | Information Expert (IE) - In MD the Client mentions one or more Addresses |
 | 7. Steps 4 to 6 are repeated until all the required postal addresses are entered (minimum 1).||||
 | 8. The system validates and presents the data, asking you to confirm them. | ... validates the data of the Client (local validation)? | Client | E: Client has its own data |
-|| ... validates the customer data (global validation)? | ClientRegistry | IE: The ClientRegistry contains Clients |
 | 9. The unregistered user confirms. ||||
 | 10. system registers the customer and registered user data and informs the unregistered user of the success of the operation.|... keeps the client registered?|ClientRegistry|IE. the ClientRegistry contains Clients |
 
 ## Systematization ##
 
-From the rational it results that the conceptual classes promoted to classes of software are:
+From the rational it results that the conceptual classes promoted to software classes are:
 
  * Company
  * Address
