@@ -1,49 +1,48 @@
-# UC12 - Consultar Ordens de Execução de Serviço
+# UC12 - Preview Service Orders in Main Application
 
-## Formato Breve
+## Brief Description
 
-O Prestador de Serviços inicia a consulta de ordens de execução de serviços. O sistema solicita o período referente às ordens de execução. O prestador indica o período. O sistema mostra as ordens de execução de serviços e questiona se o prestador pretende exportar estes dados.
+The Service Provider starts consultation service execution orders. The system requests the period for the execution orders. The provider indicates the period. The system shows the service execution orders and asks if the service provider wants to export this data.
 
 ## SSD
 ![SSD_UC12_IT3.png](SSD_UC12_IT3.png)
 
-## Formato Completo
+## Full Description,
 
-### Ator principal
+### Primary Actor
 
-Prestador de Serviços
+Service Provider
 
-### Partes interessadas e seus interesses
-* **Prestador de serviços:** tem interesse em consultar as ordens de execução que lhe estão atribuídas num dado período.
-* **Empresa:** tem interesse em manter os prestadores informados acerca das suas ordens de execução.
+### Stakeholders and purposes
+* **Service Provider:** Service Provider is interested in consulting the execution of orders assigned to it in a given period
+* **Company:** Company has an interest in keeping providers informed about its execution orders.
 
-### Pré-condições
-
-
-### Pós-condições
+### Preconditions
 
 
-## Cenário de sucesso principal (ou fluxo básico)
-1. O Prestador de Serviços inicia a consulta de ordens de execução de serviços.
-2. O sistema pede que seja indicado qual o período a pesquisar.
-3. O Prestador de Serviços indica o período a pesquisar.
-4. O sistema mostra as ordens de execução de serviços existentes para o período selecionado e questiona o Prestador de Serviços se este pretende exportar os dados exibidos.
-5. O Prestador de Serviços indica se pretende exportar os dados e seleciona o formato.
-6. Operação bem sucedida.
+### Postconditions
 
 
-### Extensões (ou fluxos alternativos)
+## Main Success scenario (or basic flow)
+1. The Service Provider initiates the consult of service execution orders.
+2. The system prompts to insert the period to search.
+3. The Service Provider inserts the period to be searched.
+4. The system shows the existing service orders for the selected period and prompts the Service Provider if it wants to export the displayed data.
+5. The Service Provider chooses whether to export the data and if so, selects the export format.
+6. Successful operation.
 
 
-### Requisitos especiais
+### Exception conditions (alternative flow)
+
+
+### Special requirements
 \-
 
-### Lista de Variações de Tecnologias e Dados
+### Variations in technologies and data
 \-
 
-### Frequência de Ocorrência
+### Frequency of occurrence
 \-
 
-### Questões em aberto
-
+### Open questions
 \-
