@@ -5,7 +5,7 @@
 # Use Cases
 | UC    | Descrição                                                                                                  |
 | :---- | :------------------------------------------------------------------------                                  |
-| UC1   | [Efetuar Registo como Cliente](CasosUso/UC1_EfetuarRegistoCliente.md)                                      |
+| UC1   | [Client Registration](CasosUso/UC1_ClientRegistration.md)                                      |
 | UC2   | [Submeter Candidatura a Prestador Serviço](CasosUso/UC2_SubmeterCandidaturaPrestadorServico.md)            |
 | UC3   | [Especificar Categoria (de Serviço)](CasosUso/UC3_EspecificarCategoria.md)                                 |
 | UC4   | [Especificar Serviço](CasosUso/UC4_EspecificarServico.md)                                                  |

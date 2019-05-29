@@ -3,7 +3,7 @@
 
 | UC    | Descrição                                                                                                |
 | :---- | :------------------------------------------------------------------------                                |
-| UC1   | [Efetuar Registo como Cliente](Design/UC1_EfetuarRegistoCliente.md)                                      |
+| UC1   | [Client Registration](Design/UC1_ClientRegistration.md)                                      |
 | UC2   | [Submeter Candidatura a Prestador Serviço](Design/UC2_SubmeterCandidaturaPrestadorServico.md)            |
 | UC3   | [Especificar Categoria (de Serviço)](Design/UC3_EspecificarCategoria.md)                                 |
 | UC4   | [Especificar Serviço](Design/UC4_EspecificarServico.md)                                                  |
