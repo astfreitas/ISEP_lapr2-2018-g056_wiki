@@ -1,46 +1,46 @@
-#Glossário
+#Glossary
 
-
-| **_Termo_**                   	| **_Descrição_**                                           |                                       
-|:------------------------|:----------------------------------------------------------------|
-| **Aplicação Informática** | Aplicação que permite a Empresa prestar serviços. Acrónimo de Sistema.|
-| **Administrativo** | Pessoa responsável pela realização de várias e diferentes atividades de suporte à atividade da empresa.|
-| **Área Geográfica** | Região onde se localiza o domicílio onde um Serviço será prestado (ex. Porto, Lisboa ...). |
-| **Candidatura** | Processo iniciado pelo prestador de serviços para poder efetuar serviços pela Empresa. |
-| **Categorias de Serviço** | Categorias de serviço ofertadas pela empresa (ex. desentupimentos, manutenção...). |
-| **Centro da Área Geográfica** | Local ao qual está associado o Código postal base da respectiva Área Geográfica. |
-| **Cliente** | Pessoa que se registou na aplicação com o intuito de efetuar pedidos de prestação de serviço(s).|
-| **Custo de Deslocação** | Valor cobrado ao cliente referente ao deslocamento da empresa até à morada indicada pelo cliente.|
-| **Custo do Pedido** | Valor cobrado ao cliente referente ao pedido de prestação de serviço(s) por este requerido. Composto pelos Custos de: deslocação, serviços, outros |
-| **Custo do serviço** | Custo cobrado ao Cliente referente à Prestação de um Serviço. São função da Duração do serviço. |
-| **Custos Adicionais** | Custos adicionais ao custo / hora de um serviço. Custo de deslocação do prestador de serviço. |
-| **Código postal base** | Código postal que caracteriza o Centro de uma Área geográfica |
-| **Código postal** | Código numérico que identifica a área geográfica de um determinado endereço |
-| **Documento Comprovativo** | Documento que comprova a habilitação profissional/académica.|
-| **Duração do serviço** | Tempo mínimo para a execução do serviço. |
-| **Empresa** | Organização que se dedica à prestação de serviços ao domicilio variados e para a qual a aplicação informática está a ser desenvolvida. |
-| **Endereço Postal** | Identifica a localização de uma determinada entidade. |
-| **Estado do pedido** | Estado em que o pedido se encontra. e.g. submetido / outro |
-| **FRH** | Acrónimo para Funcionário de Recursos Humanos. |
-| **Funcionário de Recursos Humanos** | Pessoa responsável pela realização de várias e diferentes atividades de suporte à atividade da empresa. O mesmo que Administrativo. |
-| **Habilitação Académica** | Curso ou ciclo de estudos concluído por um indivíduo num estabelecimento de ensino nacional ou estrangeiro e comprovado por diploma ou certificado.  |
-| **Habilitação Profissional** | Competências adquiridas por um indivíduo durante a sua atividade profissional. |
-| **NIF** | Acrónimo para Número de Identificação Fiscal. |
-| **Numero mecanográfico** | Número de identificação do Prestador de Serviço |
-| **Número de Identificação Fiscal** | Número sequencial destinado exclusivamente ao tratamento de informação de índole fiscal e aduaneira. |
-| **Número de Pedido** | Número sequencial que identifica o pedido realizado pelo cliente.|
-| **Pedido de Prestação de Serviços** | Meio através do qual um cliente realiza um pedido de prestação de serviços com as características por ele indicadas.|
-| **Período de disponibilidade** | Dias e horas nos quais o Prestador de Serviço possui disponibilidade para executar Serviços |
-| **Processo de Autenticação** | Meio através do qual se procede à verificação da identidade do cliente registado.|
-| **Processo de Candidatura** | Meio através do qual um Utilizador Não Registado se candidata a prestador de serviços na plataforma.|
-| **Processo de Registo** | Meio através do qual um Utilizador Não Registado se regista como cliente na plataforma.|
-| **Raio de ação** | Raio que define o tamanho da circunferência que constitui a Área Geográfica. |
-| **Serviço externo** | Serviço (de informação) prestado por uma entidade externa à Aplicação (e.g. API) |
-| **Serviços expansíveis** | Serviços no qual o Cliente especifica a Duração do serviço. A sua Duração pode ser excedida para a conclusão do Serviço. |
-| **Serviços fixos** | Serviço no qual a empresa específica a Duração do serviço fixa. O valor da Duração do serviço é cobrado ao cliente. |
-| **Serviços limitados** | Serviços no qual o Cliente especifica a Duração do serviço. Os serviços são executados até o limite da Duração, independentemente da sua conclusão. |
-| **Sistema** | Aplicação informática em questão. |
-| **Tempo mínimo do serviço** | Duração mínima do serviço (30 minutos). |
-| **Utilizador Não Registado** | Utilizador que interage com a aplicação informática de forma anónima, i.e. sem ter realizado previamente o processo de autenticação previsto.|
-| **Utilizador Registado** | Utilizador que interage com a aplicação informática após ter realizado o processo de autenticação previsto e, portanto, a aplicação conhece a sua identidade.|
-| **Utilizador** | Pessoa que interage com a aplicação informática.|
+| **_Definition_**                   | **_Description_**                                                                                                                                          |
+| :------------------------          | :----------------------------------------------------------------                                                                                          |
+| ** Computer Application **         | Application that allows the Company to provide services. Acronym for System                                                                                |
+| ** Administrative **               | Person responsible for carrying out various and different services to support the company's                                                                |
+| ** Geographic Area **              | Region where services may be provided by the Company (eg Porto, Lisbon ...).                                                                               |
+| ** Service Provider Application ** | Process initiated by the unregistered user to become a service provider.                                                                                   |
+| ** Service Categories **           | Categories of service offered by the company (eg de-inking, maintenance ...).                                                                              |
+| ** Geographic Area's Center **     | Location defining the center of a Geographic Area. Identified by a Postal Code.                                                                            |
+| ** Client **                       | Person who registered in the application in order to make service requests (s).                                                                            |
+| ** Travel Cost **                  | Costs related to the displacement costs of a service provider to the client's address                                                                      |
+| ** Order Cost **                   | Amount charged to the client related to the sum of all costs in a service request/order.                                                                   |
+| ** Execution Order **              | Order created to the Service Provider after the Assignement of services in a Service Request                                                               |
+| ** Service Assignement **          | Process in which services contained in a Service Request are assigned to designated Service Providers                                                      |
+| ** Service Cost **                 | Cost related to a service provided by the company. Depends on the type of service.                                                                         |
+| ** Additional Costs **             | Additional costs of a service request/order. Currently encompasses only the cost of travel.                                                                |
+| ** Postal code **                  | Numerical code identifying locations in Geographic Areas                                                                                                   |
+| ** Supporting Document **          | Document providing proof of professional / academic qualification                                                                                          |
+| ** Service Duration **             | Minimum time for the execution of the service.                                                                                                             |
+| ** Company **                      | Organization that is dedicated to provide various services to clients.                                                                                     |
+| ** Address **                      | Identification of the location of a particular entity.                                                                                                     |
+| ** Order status **                 | State of a service order.                                                                                                                                  |
+| ** HRO **                          | Acronym for Human Resources Officer.                                                                                                                       |
+| ** Human Resources Officer **      | Person responsible for carrying out various and different activities to support the company's activity. Same as Administrative.                            |
+| ** Academic Qualification **       | Educational course completed by an individual in a national or foreign educational institution and proven by diploma or certificate.                       |
+| ** Professional Qualification **   | Skills acquired by an individual during his or her professional activity.                                                                                  |
+| ** NIF **                          | Acronym for Fiscal Identification Number (pt).                                                                                                             |
+| ** ID Number **                    | Service Provider Identification Number                                                                                                                     |
+| ** Fiscal Identification Number ** | Sequential number intended exclusively for the processing of tax and customs information.                                                                  |
+| ** Order Number **                 | Sequential number that identifies the service order made by the Client.                                                                                    |
+| ** Service Request **              | The means by which a Client makes a request for services to be provided for him. May contain several Service Descriptions.                                 |
+| ** Service Description **          | A description of a service to be performed which comprehends Client's definitions.                                                                         |
+| ** Daily Availability **           | Days and hours in which the Service Provider is available to perform Services                                                                              |
+| ** Authentication Process **       | Means by which the identity of the users is verified.                                                                                                      |
+| ** Client Registration **          | Means by which an Unregistered User applies to become a Client in the platform.                                                                            |
+| ** Radius of action **             | Radius that defines the size of the circumference that constitutes the Geographic Area.                                                                    |
+| ** External Service **             | Service (of information) provided by an entity external to the Application (e.g. API)                                                                      |
+| ** Expandable services **          | Services to which the Customer specifies the duration of the service. The Duration may be exceeded for completion of the Service.                          |
+| ** Fixed services **               | Services to which the company specifies the duration of the service. The duration is fixed and the service is of fixed value.                              |
+| ** Limited services **             | Services to which the Customer specifies the duration of the service. The services are run to the limit of the Duration, regardless of their completion.   |
+| ** System **                       | Computer application in question.                                                                                                                          |
+| ** Minimum service time **         | Minimum duration of service (30 minutes).                                                                                                                  |
+| ** Unregistered User **            | User interacting with the computer application anonymously, i.e. without having previously performed the intended authentication process.                  |
+| ** Registered User **              | A user who interacts with the computer application after performing the intended authentication process, and therefore the application knows its identity. |
+| ** User **                         | Person who interacts with the computer application                                                                                                         |
