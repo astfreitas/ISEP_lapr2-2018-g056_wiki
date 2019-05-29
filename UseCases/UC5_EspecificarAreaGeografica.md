@@ -1,83 +1,83 @@
-# UC5 - Especificar Área Geográfica
+# UC5 - Geographic Area Specification
 
-## Formato Breve
+## Brief Description
 
-O administrativo inicia a especificação de uma nova área geográfica. O sistema solicita os dados necessários (i.e. designação, **código postal, raio,** custo de deslocação). O administrativo introduz os dados solicitados. **O sistema obtém os códigos postais cobertos pela nova area geográfica**, valida e apresenta os dados e ao administrativo, pedindo que os confirme. O administrativo confirma. O sistema regista a nova area geográfica e informa o administrativo do sucesso da operação.
+The administrative begins to specify a new geographical area. The system requests the required data (i.e. designation, postal code, radius, travel cost). The administrative enters the requested data. The system gets the postal codes covered by the new geographical area, validates and presents the data and the administrative, asking to confirm the data. The administrative confirms. The system registers the new geographical area and informs the administrative the success of the operation.
+
 
 ## SSD
 ![SSD_UC5_IT2.png](SSD_UC5_IT2.png)
 
-## Formato Completo
+## Full Description
 
-### Ator principal
+### Primary Actor
 
-Administrativo
+Administrative
 
-### Partes interessadas e seus interesses
-* **Administrativo:** pretende especificar as áreas geográficas e os custos de deslocação associados.
-* **Cliente:** pretende saber em que áreas geográficas a empresa presta serviços e os custos de deslocação.
-* **Empresa:** pretende que as áreas geográficas estejam descritas em rigor/detalhe.
+### Stakeholders and purposes
+* **Administrative:** wants to specify new geographic areas and to register the associated costs.
+* **Client:** intents to know in which areas the company provides services and travel costs.
+* **Company:** intents to have all the complete information regarding the geographic areas in which as Services to provide.
 
 
-### Pré-condições
+### Preconditions
 n/a
 
-### Pós-condições
-A informação da área geográfica é registada no sistema.
+### Postconditions
+All data regarding the geographic area is registered in the system.
 
-## Cenário de sucesso principal (ou fluxo básico)
+## Main success scenario (or basic flow)
 
-1. O administrativo inicia a especificação de uma nova área geográfica.
-2. O sistema solicita os dados necessários (i.e. designação, **código postal, raio**, custo de deslocação). 
-3. O administrativo introduz os dados solicitados. 
-4. **O sistema obtém os códigos postais cobertos pela nova area geográfica**, valida e apresenta os dados e ao administrativo, pedindo que os confirme. 
-5. O administrativo confirma. 
-6. O sistema a nova area geografica e informa o administrativo do sucesso da operação.
+1. The administrative begins the specification of a new geographic area.
+2. The system requests the required data (i.e. designation,  postal code, radius, travel cost).
+3. The administrator enters the requested data.
+4. The system obtains the postal codes covered by the new geographical area, validates the gathered data and presents it to the administrative, requesting to confirm the data.
+5. The administrative confirms.
+6. The system adds the new geographic area to the system and informs the administrative of the success of the operation.
 
-### Extensões (ou fluxos alternativos)
 
-*a. O administrativo solicita o cancelamento da especificação da area geográfica.
+### Exception conditions (alternative flow)
 
-> O caso de uso termina.
-	
-4a. Dados mínimos obrigatórios em falta.
-> 1. O sistema informa quais os dados em falta.
-> 2. O sistema permite a introdução dos dados em falta (passo 3)
+*a. The administrator requests the cancellation of the operation to specify a geographic area.
+
+> The use case ends.
+
+4a. Minimum mandatory data missing.
+> 1. The system informs the user which data is missing.
+> 2. The system allows you to enter the missing data (step 3)
 >
-	> 2a. O administrativo não altera os dados. O caso de uso termina.
+	> 2a. The administrative does not change the data. The use case ends.
 
-4b. O sistema deteta que os dados (ou algum subconjunto dos dados) introduzidos devem ser únicos e que já existem no sistema.
->	1. O sistema alerta o administrativo para o facto.
->	2. O sistema permite a sua alteração (passo 3)
+4b. The system detects that the inserted data (or some subset) already exist in the system and must be unique.
+>	1. The system alerts the administrative to this matter.
+>	2. The systems allows the change (step 3)
 >
-	>	2a. O administrativo não altera os dados. O caso de uso termina.
+	>	2a. The administrative does not change the data. The use case ends.
 
-4c. O sistema detecta que os dados introduzidos (ou algum subconjunto dos dados) são inválidos.
-> 1. O sistema alerta o administrativo para o facto. 
-> 2. O sistema permite a sua alteração (passo 3).
-> 
-	> 2a. O administrativo não altera os dados. O caso de uso termina. 
+4c.  The system detects that the inserted data (or some subset) is invalid.
+> 1. The system alerts the administrative to this matter.
+> 2. The systems allows the change (step 3)
+>
+	> 2a. The administrative does not change the data. The use case ends.
 
-**4d. O sistema não consegue determinar os códigos postais cobertos pela área geográfica**
-> 1. O sistema alerta o administrativo para o facto. 
->  O caso de uso termina. 
+4d. The system is not able to determine the postal codes covered by the geographical area.
+> 1. The system alerts the administrative to this matter.
+	> The use case ends.
 
-### Requisitos especiais
+### Special Requirements
 \-
 
-### Lista de Variações de Tecnologias e Dados
+### Variations in technologies and data
 \-
-**O sistema deve recorrer a um serviço externo definido por configuração para obter os códigos postais abrangidos pela area geográfica** 
+The system must use an external service defined by configuration to obtain the postal codes covered by the geographical area
 
-### Frequência de Ocorrência
+### Frequency of occurrence
 \-
 
-### Questões em aberto
+### Open questions
 
-* ~~Existem outros dados que são necessários para identificar a área geográfica?~~
-* ~~Quais  os dados que são obrigatórios para identificar uma área geográfica?~~
-* Quais os dados que em conjunto permitem detectar a duplicação de áreas geográficas?
-* É necessário manter algum histórico do custo de deslocalção associada à área geográfica?
-* Qual a frequência de ocorrência deste caso de uso?
-* **O sistema deve alertar para sobreposições territoriais entre áreas geográficas?**
-* **Os códigos postais obtidos através do serviço externo podem ser modificados (adicionados, removidos) pelo administrativo?** 
+* What data together can detect the duplication of geographical areas?
+* Is it necessary to maintain some historical cost of relocation associated with the geographical area?
+* How often does this use case occur?
+* **Should the system alert to territorial overlaps between geographic areas? **
+* **Postal codes obtained through the external service can be modified (added, removed) by the administrative?**

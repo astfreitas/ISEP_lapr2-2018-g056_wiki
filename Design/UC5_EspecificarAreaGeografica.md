@@ -1,65 +1,52 @@
-# Realização de UC5 Especificar Área Geográfica
+# Realization of UC5  Specify Geographic Area
 
-## Racional
+## Rational
 
-| Fluxo Principal                                                                                        | Questão: Que Classe...                                      | Resposta                                       | Justificação                                                                                                         |
+  | Flow Main                                                                                        | Questions: Which class...                                      | Answer                                       | Justification                                                                                                         |
 |:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-| 1. O administrativo inicia a especificação de uma nova área geográfica. | ... interage com o utilizador? | EspecificarAreaGeograficaUI.                          | Pure Fabrication, pois não se justifica atribuir esta responsabilidade a nenhuma classe existe no Modelo de Domínio. |
-|| ... coordena o UC?                                                                              | EspecificarAreaGeograficaController                                | Controller.                                    |                                                                                                                      |
-|| ... cria/instancia área geográfica?          | RegistoAreasGeograficas                                               | Creator (Regra 1) + HC+LC : Empresa delega em RegistoAreasGeograficas                             |                                                                                                                      |
-| 2. O sistema solicita os dados necessários (i.e. designação, **código postal, raio**, custo de deslocação).  |                  |                                                |                                                                                                                      |
-| 3.	O administrativo introduz os dados solicitados.   | ... guarda os dados introduzidos?                    |Área Geográfica                                    | Information Expert (IE) - instância criada no passo 1                                                                                              |
-| 4.	 **O sistema obtém os códigos postais cobertos pela nova area geográfica**, valida e apresenta os dados e ao administrativo, pedindo que os confirme.                                                              | ... valida os dados da área geográfica (validação local)? | Área Geográfica                                     | IE: Área Geográfica possui os seus próprios dados                                                                                                                   |
-|| ... valida os dados da Área Geográfica (validação global)?                                           | RegistoAreasGeograficas                                               | IE: RegistoAreasGeograficas contém/agrega AreasGeograficas |                                                                                                                      |
-||...disponibiliza os códigos postais num raio de ação|ServicoExterno|IE: no MD ServicoExterno fornece essa informação. |
-||...qual é o resultado expetável do ServicoExterno|List\<AtuaEm>|IE: no MD ServicoExterno informa várias "AtuaEm". |
-||... conhece o ServicoExterno|Empresa|IE: no MD Empresa define ServicoExterno. Protected Variation sobre ServicoExterno visto que o sistema deve suportar vários serviços externos|
-||...implementa as particularidades de cada serviço externo em concreto?|ServicoExtenoXXXAdapter|ProtectedVariation + Adapter|
-| 5. O administrativo confirma.                                                                     |                                                             |                                                |                                                                                                                      |
-| 6.	O sistema regista os dados e informa o administrativo do sucesso da operação.                           | ... guarda a área geográfica  especificada/criada?                            | Empresa                                 | IE. No MD a Empresa atua em várias áreas geográficas                                                                |
-|| ... notifica o utilizador?                                                                                   | EspecificarCategoriaUI                                        |                                                |                                                                                                                      |
+| 1. The administrative begins to specify a new geographical area. | ... interacts with the user? | GeographicAreaSpecUI.                          | Pure Fabrication, because it is not justified to attribute this responsibility to any class existing in the Domain Model. |
+|| ... coordinates the UC?                                                                              | GeographicAreaSpecController                                | Controller.                                    |                                                                                                                      |
+|| ... create/instance Geographic Area?          | GeographicAreaRegistry                                               | Creator (Rule 1) + HC+LC : Company delegates to GeographicAreaRegistry                              |                                                                                                                      |
+| 2. The system requests the required data (i.e. designation, postal code, radius, travel cost).  |                  |                                                |                                                                                                                      |
+| 3.	The administrator enters the requested data.   | ...saves the submitted data?                    |Geographic Area                                    | Information Expert (IE) - instance created in step 1                                                                                              |
+| 4.	 The system obtains the postal codes covered by the new geographical area, validates the gathered data and presents it to the administrative, requesting to confirm the data.                                                              | ... validates the data of the new Geographic Area (local validation?) | Geographic Area                                     | IE: Geographic Area has its own data                                                                                                                    |
+|| ... validates the data of the new Geographic Area (global validation)?                                           | GeographicAreaRegistry                                               | IE: GeographicAreaRegistry contains/adds Geographic Area |                                                                                                                      |
+||...provides the available postal codes available within a radius/range of action|ExternalService|IE: in Domain Model External Service provides this information. |
+||...what is the expected outcome from ExternalService|List\<Location>|IE: in the Domain Model the ExternalService provides information about several "Location" lists. |
+||... knows the ExternalService|Company|IE: the Domain Model defines the ExternalService. Protected Variation regarding ExternalService since the system must support several external services|
+||...implements the particularities of each external service in concrete?|ExternalServiceXXXAdapter|ProtectedVariation + Adapter|
+| 5. The administrative confirms.                                                                     |                                                             |                                                |                                                                                                                      |
+| 6.	The system records the data and informs the administrative the success of the operation.                           | ... saves the specified / created geographic area?                            | Company                                 | IE. In the Domain Model the company operates in several geographical areas                                                                |
+|| ... notifies the user?                                                                                   | GeographicAreaSpecUI                                        |                                                |                                                                                                                      |
 
-## Sistematização ##
+## Systematization ##
 
- Do racional resulta que as classes conceptuais promovidas a classes de software são:
+ From the rationale results that the following conceptual classes are promoted to software classes are:
 
- * Empresa
- * Área Geográfica
- * ServicoExterno
- * AtuaEm
+ * Company
+ * GeographicArea
+ * ExternalService
+ * Location
 
-Outras classes de software (i.e. Pure Fabrication) identificadas:  
+Other software classes (i.e. Pure Fabrication) identified:  
 
- * EspecificarAreaGeograficaUI  
- * EspecificarAreaGeograficaController
- * RegistoAreasGeograficas
+ * GeographicAreaSpecUI  
+ * GeographicAreaSpecController
+ * GeographicAreaRegistry
 
 
-##	Diagrama de Sequência
+##	Sequence Diagram
 ### Solução Base
 ![SD_UC5_IT2.png](SD_UC5_IT2.png)
 
-**Esta solução base é complementada/detalhada com uma das alternativas abaixo apresentadas.
-Aplicou-se _"Interaction Use"_ para que o Diagrama de Sequência referencie o diagrama que detalha/complementa este.**
+**It was applied _"Interaction Use"_ so that the Sequence Diagram has a reference to the diagram that details / complements the main diagram.
 
 
-### Detalhe - Alternativa A
+### Detail Diagram
 
-![SD_UC5_IT2_Detalhe1.png](SD_UC5_IT2_Detalhe1.png)
+![SD_UC5_IT2_Detail1.png](SD_UC5_IT2_Detail1.png)
 
 
-### Detalhe - Alternativa B
-
-![SD_UC5_IT2_Detalhe2.png](SD_UC5_IT2_Detalhe2.png)
-
-### Detalhe - Outras Alternativas
-
-Outras alternativas são possíveis e aceitáveis.
-Por exemplo, uma alternativa semelhante à alternativa A mas que adote a forma de criação de "CodigoPostal" usada na alternativa B (através do método "from").
-
-**Contudo, a forma de criação de "CódigoPostal" da alternativa A (através do seu construtor) está mais coerente com as restante proposta de solução.**
-
-##	Diagrama de Classes
-De acordo com a alternativa A.
+##	Class Diagram
 
 ![CD_UC5_IT2.png](CD_UC5_IT2.png)
