@@ -2,7 +2,7 @@
 
 ## Brief Description
 
-The unregistered user starts the registration as a client. The system requests the necessary data (i.e. the person's full name, NIF, telephone contact, email, password, and at least one postal address). The unregistered user enters the requested data. The system validates and displays the data, asking you to confirm them. The unregistered user confirms. The system records the customer and registered user data and informs the unregistered user of the success of the operation.
+The unregistered user starts the registration as a client. The system requests the necessary data (i.e. the person's full name, NIF, telephone contact, email, password, and at least one postal address). The unregistered user enters the requested data. The system validates and displays the data, asking him to confirm them. The unregistered user confirms. The system records the customer and registered user data and informs the unregistered user of the success of the operation.
 
 ## SSD
 ![UC1-SSD-IT2.png](SSD_UC1_IT2.png)
@@ -55,21 +55,21 @@ The registration information is stored in the system.
 >
 > 2a. The unregistered user does not change the data. The use case ends.
 
-8a. Required minimum data missing.
-> 1. The system informs you of missing data.
+8a. Required data missing.
+> 1. The system informs of missing data.
 > 2. The system allows the missing data to be entered (step 3)
 >
 > 2a. The unregistered user does not change the data. The use case ends.
 
 8b. The system detects that the data (or some subset of the data) entered must be unique and already exist in the system.
 > 1. The system alerts the unregistered user to the fact.
-> 2. The system allows you to change it (step 3)
+> 2. The system allows to change it (step 3)
 >
 > 2a. The unregistered user does not change the data. The use case ends.
 
 8c. The system detects that the entered data (or some subset of the data) is invalid.
 > 1. The system alerts the unregistered user to the fact.
-> 2. The system allows you to change it (step 3).
+> 2. The system allows to change it (step 3).
 >
 > 2a. The unregistered user does not change the data. The use case ends.
 

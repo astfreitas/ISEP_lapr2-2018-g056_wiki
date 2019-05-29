@@ -16,7 +16,7 @@
 ||| PostalCode | IE: Adress has a PostalCode |
 | 6. The system validates and stores the entered address. | ... save the created Address instance? |Client | Information Expert (IE) - In MD the Client mentions one or more Addresses |
 | 7. Steps 4 to 6 are repeated until all the required postal addresses are entered (minimum 1).||||
-| 8. The system validates and presents the data, asking you to confirm them. | ... validates the data of the Client (local validation)? | Client | E: Client has its own data |
+| 8. The system validates and presents the data, asking you to confirm them. | ... validates the data of the Client (local validation)? | ClientRegistry | IE|
 | 9. The unregistered user confirms. ||||
 | 10. system registers the customer and registered user data and informs the unregistered user of the success of the operation.|... keeps the client registered?|ClientRegistry|IE. the ClientRegistry contains Clients |
 
