@@ -1,200 +1,176 @@
-UC2 - Submeter candidatura a prestador de serviço
-=================================================
+# UC2 - Submit application for service provider
 
-**(Não foi modificado neste iteração)**
+## Brief description
 
-Formato breve
--------------
-
-O utilizador não registado inicia o registo de uma nova candidatura a prestador
-de serviço. O sistema solicita os dados necessários à candidatura (nome completo
-da pessoa, NIF, telefone, email, endereço(s) postal, habilitações académicas e
-profissionais, documentos comprovativos). O utilizador não registado introduz os
-dados solicitados. O sistema mostra as categorias de serviço e solicita a
-seleção daquelas que se propõe vir a realizar. O utilizador não registado
-seleciona as categorias pretendidas. O sistema valida e apresenta os dados,
-pedindo que os confirme. O utilizador não registado confirma os dados da
-candidatura. O sistema regista a nova candidatura e informa o utilizador não
-registado do sucesso da operação.
-
-### SSD
+The unregistered user initiates the registration of a new application for service provider. The system requests the necessary data for the application (full name NIF, phone number, email, postal address (at leats one), academic and professional qualifications and supporting documents). The unregistered user enters the requested data. The system shows the service categories and requests the user to select those whose servers he wishes to provide. The unregistered user select the desired categories. The system validates and displays the data, asking to confirm them. The unregistered user confirms the application. The system registers the new application and informs the user that success of the operation.
+## SSD
 
 ![]( SSD_UC2_IT1.png)
+### Primary Actor
 
-Formato completo
-----------------
+Unregistered user
 
-### Ator primário
+### Stakeholders and their interests
 
-Utilizador não registado
+** Unregistered user: ** wishes to submit his application for service provider.
 
-### Partes interessadas e seus interesses
+** Company: ** wants anyone who wishes to collaborate with the company to submit their application for service provider.
 
-**Utilizador não registado:** pretende apresentar a sua candidatura a prestador
-de serviços prestados pela empresa.
-
-**Empresa:** pretende que qualquer pessoa que deseje colaborar com a empresa
-apresente a sua a candidatura a prestador de serviço.
-
-### Pré-condições
+### Preconditions
 
 n/a
 
-### Pós-condições
+### Post-conditions
 
-A candidatura a prestador de serviço fica registada no sistema.
+An application for service provider is registered in the system.
 
-### Cenário de sucesso principal (ou fluxo básico)
+### Main success scenario
 
-1. O utilizador não registado inicia a submissão de uma nova candidatura.
+1. The unregistered user initiates the submission of a new application for service provider.
 
-2. O sistema solicita os dados necessários (i.e. nome completo da pessoa, o NIF, contacto telefónico e email). 
+2. The system requests the necessary data (i.e. full name, NIF, phone number, email).
 
-3. O utilizador não registado introduz os dados solicitados.
+3. The unregistered user enters the requested data.
 
-4. O sistema solicita um endereço postal. 
+4. The system requests a postal address.
 
-5. O utilizador não registado introduz o endereço postal. 
+5. The unregistered user enters the postal address.
 
-6. O sistema valida e guarda o endereço introduzido.
+6. The system validates and stores the address.
 
-7. Os passos 4 a 6 repetem-se enquanto não forem introduzidos todos os endereços postais pretendidos (minimo 1).
+7. Steps 4 to 6 are repeated until all postal addresses are provided (minimum 1).
 
-8. O sistema solicita uma habilitação académica.
+8. The system requires an academic qualification.
 
-9. O utilizador não registado introduz a habilitação académica
+9. The unregistered user introduces the academic qualification
 
-10. O sistema valida e guarda a habilitação académica.
+10. The system validates and holds the academic qualification.
 
-11. Os passos 8 a 10 repetem-se enquanto não forem introduzidos todas as habilitações académicas.
+11. Steps 8 to 10 are repeated until all academic qualifications have been entered.
 
-12. O sistema solicita uma habilitação profissional.
+12. The system requires a professional qualification.
 
-13. O utilizador não registado introduz a habilitação profissional.
+13. The unregistered user introduces the professional qualification.
 
-14. O sistema valida e guarda a habilitação profissional.
+14. The system validates and holds the professional qualification.
 
-15. Os passos 12 a 14 repetem-se enquanto não forem introduzidos todos as habilitações profissionais.         
+15. Steps 12 to 14 are repeated until all professional qualifications have been completed.
 
-16. O sistema solicita documentos comprovativos. 
+16. The system requests supporting documents proving the user's qualification.
 
-17. O utilizador não registado introduz documento comprovativo.
+17. The unregistered user introduces the document.
 
-18. O sistema valida e guarda documento comprovativo. 
+18. The system validates and holds the document.
 
-19. Os passos 16 a 18 repetem-se enquanto não forem introduzidos todos os documentos comprovativos.           
+19. Steps 16 to 18 are repeated until all supporting documents have been entered.
 
-20. O sistema mostra as categorias de serviços disponíveis no sistema.
+20. The system shows the categories of services available in the system.
 
-21. O utilizador não registado seleciona a categoria dos serviços que se propõe realizar. 
+21. The unregistered user selects the category of services he intends to perform.
 
-22. O sistema valida e guarda a categoria selecionada. 
+22. The system validates and stores the selected category.
 
-23. Os passos 20 a 22 repetem-se enquanto não forem introduzidas todas as categorias. 
+23. Steps 20 to 22 are repeated until all categories are entered.
 
-24. O sistema valida e apresenta os dados da candidatura ao utilizador não registado, pedindo que os confirme. 
+24. The system validates and presents the application data to the unregistered user and asks him to confirm them.
 
-25. O utilizador não registado confirma os dados da candidatura. 
+25. The unregistered user confirms the application details.
 
-26. O sistema regista a nova candidatura e informa o utilizador não registado do sucesso da operação.   
+26. The system registers the new application and informs the unregistered user of the success of the operation.
 
 
-### Extensões (ou fluxos alternativos)
+### Extensions (alternative flow)
 
-\*a. O utilizador não registado solicita o cancelamento da candidatura.
+\*The. The unregistered user requests the cancellation of the application submission.
 
->	O caso de uso termina.
+> End of use case.
 
-6a. Dados de Endereço Postal incompletos.
+6a. Incomplete Postal Address Information.
 
->	1.  O sistema informa quais os dados em falta.
+> 1. The system informs the user of about the missing data.
 
->	2.  O sistema permite a introdução dos dados em falta (passo 5)
+> 2. The system allows the missing data to be entered (step 5)
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
+>> 2a. The unregistered user does not change the data. The use case ends.
 
-10a. Dados de Habilitação Académica incompletos.
+10a. Incomplete Academic Enrollment Data.
 
->	1.  O sistema informa quais os dados em falta.
+> 1. The system informs the user of missing data.
 
->	2.  O sistema permite a introdução dos dados em falta (passo 9)
+> 2. The system allows the user to enter the missing data (step 9)
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
+>> 2a. The unregistered user does not change the data. The use case ends.
 
-14a. Dados de Habilitação Profissional incompletos.
+14a. Incomplete Professional Qualification Data.
 
->	1.  O sistema informa quais os dados em falta.
+> 1. The system informs the user of missing data.
 
->	2.  O sistema permite a introdução dos dados em falta (passo 13)
+> 2. The system allows the user to enter the missing data (step 13)
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
+>> 2a. The unregistered user does not change the data. The use case ends.
 
-14a. Formato do documento não é suportado.
+14a. Document format is not supported.
 
->	1.  O sistema informa para tal facto.
+> 1. The system system informs the user.
 
->	2.  O sistema permite a introdução de outro documento (passo 13)
+> 2. The system allows the user to enter another document (step 13)
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
+>> 2a. The unregistered user does not change the data. The use case ends.
 
-20a. O sistema não tem categorias de serviço para apresentar.
+20a. The system has no service categories to display.
 
->	1.  O sistema informa que não existem categorias de serviço.
+> 1. The system informs that there are no service categories.
 
-> 	>	O caso de uso avança para o passo 24.
+>> The use case advances to step 24.
 
-24a. Dados mínimos obrigatórios em falta.
+24a. Required minimum data missing.
 
->	1.  O sistema informa quais os dados em falta.
+> 1. The system informs the user of missing data.
 
->	2.  O sistema permite a introdução dos dados em falta (passo 3)
+> 2. The system allows the missing data to be entered (step 3)
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
+>> 2a. The unregistered user does not change the data. The use case ends.
 
-24b. O sistema deteta que os dados (ou algum subconjunto dos dados) introduzidos
-devem ser únicos e que já existem no sistema.
+24b. The system detects that the data (or any subset of the data) entered must be unique and already exist in the system.
 
->	1.  O sistema alerta o utilizador não registado para o facto.
+> 1. The system alerts the unregistered user to the fact.
 
->	2.  O sistema permite a sua alteração (passo 3)
+> 2. The system allows the user to change it (step 3)
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
- 
-24c. O sistema detecta que os dados introduzidos (ou algum subconjunto dos
-dados) são inválidos.
+>> 2a. The unregistered user does not change the data. The use case ends.
 
->	1.  O sistema alerta o utilizador não registado para o facto.
+24c. The system detects that the data entered (or some subset of the data) are invalid.
 
->	2.  O sistema permite a sua alteração (passo 3).
+> 1. The system alerts the unregistered user to the fact.
 
->	>   2a. O utilizador não registado não altera os dados. O caso de uso termina.
+> 2. The system allows the user to change it (step 3).
 
-### Requisitos especiais
+>> 2a. The unregistered user does not change the data. The use case ends.
+
+### Special Requirements
 
 n/a
 
-### Lista de variações em tecnologias e dados
+### List of Variations in Technologies and Data
 
 n/a
 
-### Frequência de Ocorrência
+### Frequency of Occurrence
 
 n/a
 
-### Questões em aberto
+### Open questions
 
--   Quais são os dados obrigatórios para uma candidatura válida?
+- What are the mandatory data for a valid application?
 
--   Quais são os dados necessários referentes a uma Habilitação Académica?
+- What are the necessary data related to Academic Qualification?
 
--   Quais são os dados necessários referentes a uma Habilitação Profissional?
+- What are the necessary data related to a Professional Qualification?
 
--   Quais são os dados que identificam univocamente uma candidatura?
+- What is the data that uniquely identifies an application?
 
--   Como sabe o utilizador não registado que a sua candidatura foi aceite?
+- How does the unregistered user know that his / her application has been accepted?
 
--   Existe limite de categorias de serviços a que o utilizador não registado se
-    pode candidatar?
+- There is a limit of categories of services to which the unregistered user can the user apply?
 
--   Quem é responsável por passar o candidato a um prestador de serviço efetivo
-    na empresa?
+- Who is responsible for promoting the candidate to an effective service provider in the company?
