@@ -17,8 +17,9 @@
 |  UC10 | [Assign Service Requests to Service Providers](UseCases/UC10_AssignServiceRequests.md)               |
 |  UC11 | [Accept Service Request Assignements](UseCases/UC11_AcceptServiceRequestAssignements.md)             |
 |  UC12 | [Preview Service Orders in Main Application](UseCases/UC12_PreviewServiceOrdersMainApp.md)           |
-|  UC13 | [Preview Service Orders in Service Provider Application](UseCases/UC12_PreviewServiceOrdersSPApp.md) |
-|  UC14 | [Preview History of Client's Orders](UseCases/UC12_PreviewClientOrdersHistory.md)                    |
-|  UC15 | [Submit Report for Service Provided](UseCases/UC12_SubmitReportForServiceProvided.md)                |
-|  UC16 | [Rate Service Provided](UseCases/UC12_RateServiceProvided.md)                                        |
-|  UC17 | [Evaluate Service Provider](UseCases/UC12_EvaluateServiceProvider.md)                                |
+|  UC13 | [CompleteService](UseCases/UC13_CompleteService.md)                                              |
+|  UC14 | [Rating SP](UseCases/UC14_RatingSP.md)                                                          |
+|  UC15 | [Evaluate SP](UseCases/UC15_Evaluate.md)                                                        |
+|  UC16 | [Import Execution Orders](UseCases/UC16_ImportExecutionOrders.md)                                 |
+|  UC17 | [Analyze Execution Orders](UseCases/UC17_AnalyzeExecutionOrders.md)                                |
+|  UC18 | [Analyze Client Timeline](UseCases/UC18_AnalyzeClientTimeline.md)                               |
