@@ -29,36 +29,63 @@ A informação do registo é guardada no sistema.
 
 1. O FRH inicia o registo dum novo Prestador de Serviço.
 2. O sistema solicita o NIF do prestador de serviços a registar.
-3. O FRH indica o NIF do prestador de serviços.
-4. O Sistema apresenta o nome e solicita confirmação.
-5.
-	a. O FRH confirma o nome.
-	b. O FRH não confirma e edita o nome.
-6. O Sistema apresenta o Email e solicita confirmação.
-7.
-	a. O FRH confirma o Email.
-	b. O FRH não confirma e edita o Email.
-8. O Sistema apresenta o contacto telefónico e solicita confirmação.
-9.
-	a. O FRH confirma o contacto telefónico.
-	b. O FRH não confirma e edita o contacto telefónico.
-10. O Sistema apresenta o apresenta o Endereço Postal e solicita confirmação.
-11.
-	a. O FRH confirma o Endereço Postal.
-	b. O FRH não confirma e edita o Endereço Postal.
-12. Os passos 10 e 11 repetem-se para todos os Endereços Existentes na candidatura.
-13. O Sistema apresenta Categoria e solicita confirmação.
-14. O FRH confirma a categoria.
-15. Os passos 13 e 14 repetem-se para todas as categorias presentes na candidatura.
-16. O Sistema apresenta todos os dados e solicita confirmação.
-17. O FRH confirma os dados.
-18. O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
+3. O FRH introduz o NIF do prestador de serviços.
+4. O sistema apresenta os dados do prestador de serviços (i.e. nome completo, NIF, email institucional, endereço postal, contacto telefónico).
+5.  O sistema apresenta a hipostese de o FRH escolher confirmar os dados apresentados ou de introduzir os dados - **alternate.**
+6.
+		a. **O FRH não aceita os dados e inicia introdução manual dos dados.**
+		6.1. O FRH introduz os dados solicitados.
+		6.2. O sistema mostra as categorias de serviços existentes e solicita uma.
+		6.3. O FRH seleciona a categoria de serviço pretendida.
+		6.4. O sistema valida e guarda a categoria selecionada.
+		6.5. Os passos 6.2 a 6.4 repetem-se enquanto não forem selecionadas todas as categorias pretendidas (mínimo 1).
+		6.6. O sistema mostra as áreas geográficas existentes e solicita uma.
+		6.7. O FRH seleciona a área geográfica pretendida.
+		6.8. O sistema valida e guarda a área geográfica selecionada.
+		6.9. Os passos 6.6 a 6.8 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (mínimo 1).
+		6.10. O sistema valida e apresenta os dados, pedindo que os confirme.
+		6.11. O FRH confirma.
+		6.12. O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
+		**Fim de alternate 6.a**
+
+		b. **O FRH aceita e confirma os dados fornecidos pelo sistema**
+		6.1. O sistema mostra as categorias de serviços da candidatura
+		6.2. O sistema apresenta hipotese de escolher confirmar as categorias apresentadas ou de escolher novamente categorias.- **alternate.**
+
+				c. **O FRH não aceita as categorias e inicia a selecção de novas categorias**
+				6.2.1. O sistema mostra as categorias de serviços existentes e solicita uma.
+				6.2.2. O FRH seleciona a categoria de serviço pretendida.
+				6.2.3. O sistema valida e guarda a categoria selecionada.
+				6.2.4. Os passos 6.2.1 a 6.2.3 repetem-se enquanto não forem selecionadas todas as categorias pretendidas (mínimo 1).
+				6.2.5. O sistema mostra as áreas geográficas existentes e solicita uma.
+				6.2.6 O FRH seleciona a área geográfica pretendida.
+				6.2.7 O sistema valida e guarda a área geográfica selecionada.
+				6.2.8 Os passos 6.2.5 a 6.2.7 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (mínimo 1).
+				6.2.9. O sistema valida e apresenta os dados, pedindo que os confirme.
+				6.2.10. O FRH confirma.
+				6.2.11 O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
+				**Fim de alternate 6.2.c**
+
+				d. **O FRH aceita as categorias - prossegue para enumeração 7**
+7. O sistema mostra as áreas geográficas existentes e solicita uma.
+8. O FRH seleciona a área geográfica pretendida.
+9. O sistema valida e guarda a área geográfica selecionada.
+10. Os passos 7 a 9 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (mínimo 1).
+11. O sistema valida e apresenta os dados, pedindo que os confirme.
+12. O FRH confirma.
+13.	O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
+
 
 ### Extensões (ou fluxos alternativos)
 
 *a. O FRH solicita o cancelamento da registo.
 
 > O caso de uso termina.
+
+3a. O FRH introduz um NIF não valido.
+> 1. O sistema informa que o NIF não é válido e volta a solicitar NIF.
+> 2. FRH submete. O caso de uso continua.
+
 
 3a. dados de numero mecanográfico e/ou nome completo/abreviado e/ou email duplicados.
 >	1. O sistema informa o FRH sobre a duplicação dos dados.

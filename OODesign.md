@@ -14,8 +14,9 @@
 |  UC10 | [Assign Service Requests to Service Providers](Design/UC10_AssignServiceRequests.md)               |
 |  UC11 | [Accept Service Request Assignements](Design/UC11_AcceptServiceRequestAssignements.md)             |
 |  UC12 | [Preview Service Orders in Main Application](Design/UC12_PreviewServiceOrdersMainApp.md)           |
-|  UC13 | [Preview Service Orders in Service Provider Application](Design/UC12_PreviewServiceOrdersSPApp.md) |
-|  UC14 | [Preview History of Client's Orders](Design/UC12_PreviewClientOrdersHistory.md)                    |
-|  UC15 | [Submit Report for Service Provided](Design/UC12_SubmitReportForServiceProvided.md)                |
-|  UC16 | [Rate Service Provided](Design/UC12_RateServiceProvided.md)                                        |
-|  UC17 | [Evaluate Service Provider](Design/UC12_EvaluateServiceProvider.md)                                |
+|  UC13 | [CompleteService](Design/UC12_CompleteService.md)                                              |
+|  UC14 | [Rating SP](Design/UC12_RatingSP.md)                                                          |
+|  UC15 | [Evaluate SP](Design/UC12_Evaluate.md)                                                        |
+|  UC16 | [Import Execution Orders](Design/UC12_ImportExecutionOrders.md)                                 |
+|  UC17 | [Analyze Execution Orders](Design/UC12_AnalyzeExecutionOrders.md)                                |
+|  UC18 | [Analyze Client Timeline](Design/UC12_AnalyzeClientTimeline.md)                               |
