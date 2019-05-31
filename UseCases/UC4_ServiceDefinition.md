@@ -33,7 +33,7 @@ Service information is registered in the system.
 1. The administrative begins to specify a new service.
 2. System shows types of services supported and prompts to select one.
 3. The administrative selects the wanted type of service.
-4. System requests the required data (i.e. service type, unique identifier, brief and complete description, category in which it is cataloged, and cost per hour).
+4. System requests the required data (i.e. service type, unique identifier, brief and complete description, category in which it is catalogued, and cost per hour).
 5. The administrative enters the requested data.
 6. System shows a list of existing categories so that one is selected.
 7. The administrative selects the category in which he wants to catalogue the service.
