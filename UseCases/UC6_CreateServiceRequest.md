@@ -28,7 +28,7 @@ The order information is stored in the system.
 ## Main success scenario
 
 1. The client initiates the service request.
-2. The system displays the list of addresses associated with the client and prompts you to choose the address at which you want the services to be delivered.
+2. The system displays the list of addresses associated with the client.
 3. The client selects the desired address.
 4. The system presents the categories of services and asks the client to select one.
 5. The client selects the desired category.
@@ -36,7 +36,7 @@ The order information is stored in the system.
 7. The client selects the desired service and enters the description and estimated duration.
 8. The system validates and stores the information entered.
 9. Steps 4 through 8 are repeated until all services desired by the client are specified.
-10. The system prompts the client to enter a preferred time (start date and time) to execute the task.
+10. The system requests the required data (i.e. start date and time) to execute the task.
 11. The client enters the desired time
 12. The system validates and saves the time entered.
 13. Steps 10 through 12 are repeated until at least one time is set.
