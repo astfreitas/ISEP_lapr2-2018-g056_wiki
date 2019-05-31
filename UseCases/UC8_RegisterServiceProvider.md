@@ -1,142 +1,138 @@
-# UC8 - Register Service Provider
+# UC8 - Registar Prestador de Serviço
 
-## Brief Description
+## Formato Breve
 
-The HRO starts registering the new service provider. System requests the NIF of the service provider to register. The HRO indicates the NIF of the service provider to be registered. System presents the data of the service provider obtained through the application verified and accepted by the company (i.e. full name, NIF, institutional email, postal address, telephone, service categories) and requests confirmation.  The HRO confirms data or proceeds to edit it. The system validates and displays data, asking to confirm. The HRO confirms the data presented by the system. The system registers the data of the new service provider and informs the HRO of the success of the operation. The system sends the authentication data to the new Service Provider.
+O FRH inicia o registo do novo Prestador de Serviço. O sistema solicita o NIF do prestador de serviços a registar. O FRH indica o NIF do prestador de serviços a registar. O sistema apresenta os dados do prestador de serviços (i.e. nome completo, NIF, email institucional, endereço postal, contacto telefónico, categorias de serviços) indicado e solicita confirmação. O FRH confirma os dados ou procede à sua edição. O sistema valida e apresenta os dados, pedindo que os confirme. O FRH confirma os dados apresentados pelo sistema. O sistema regista os dados do novo Prestador de Serviço e informa o FRH do sucesso da operação. O sistema envia os dados de acesso ao novo Prestador de Serviço.
 
 ## SSD
 ![UC8-SSD-IT3.png](SSD_UC8_IT3.png)
 
-## Full Description
+## Formato Completo
 
-### Primary Actor
+### Ator principal
 
-Human Resources Officer (HRO)
+Funcionário de Recursos Humanos (FRH)
 
-### Stakeholders and Interests
-* **HRO** intends to register the Service Providers so that it is possible to make available the services provided by the company.
-* **Company:** intends that the Service Provider be available to perform the services requested by clients.
-* **Service Provider** needs to have an access profile to indicate their availability in order to perform the services requested by the Company's customers.
-
-
-### Preconditions
-The pre-existence of Service Categories and Geographic Areas defined in the system.
-
-### Postconditions
-The service provider registration information is stored in the system.
-
-## Main Success Scenario
-
-1. The HRO starts registering the new service provider.
-2. System requests the NIF of the service provider to register.
-3. The HRO indicates the NIF of the service provider to be registered.
-4. System presents the data of the service provider obtained through the application verified and accepted by the company (i.e. full name, NIF, institutional email, postal address, telephone, service categories) and requests confirmation.
-5. The system allows the HRO to confirm the displayed data or to enter new data - **alternate 1 (alt 1)**
-6. (Acceptance of pre-filled data obtained through the application)
-a) **alt 1a->**  The HRO does not accept the data and starts manually entering the data.
-    6.1. The HRO enters the requested data.
-		6.2. The system shows the existing service categories and requests one.
-		6.3. The HRO selects the service category.
-		6.4. The system validates and stores the selected category.
-		6.5. Steps 6.2 to 6.4 repeat until all desired categories are selected (minimum 1).
-		6.6. The system shows the existing geographic areas and requests one.
-		6.7. The HRO selects the intended geographical area.
-		6.8. System validates and stores the selected geographic area.
-		6.9. Steps 6.6 to 6.8 repeat until all the desired geographic areas are selected (minimum 1).
-		6.10. The system validates and displays data, asking for confirmation.
-		6.11. HRO confirms.
-		6.12. The system registers data of the new Service Provider, sends the authentication information to the new Service Provider and informs the HRO of the success of the operation.
-b) **alt 1b->** The HRO accepts and confirms the data provided by the system.
-		6.1. System shows the service categories of the application.
-		6.2. The system has the option to confirm the categories presented or to choose categories again - **alternate 2 (alt 2)**
-6.3. (Acceptance of pre-filled categories obtained through the application)
-a) **alt 2a->** The HRO does not accept categories and starts selecting new categories.
-				6.3.1. The system shows the existing service categories and requests one.
-				6.3.2. The HRO selects the desired service category.
-				6.3.3. The system validates and stores the selected category.
-				6.3.4. Steps 6.3.1 to 6.3.3 repeat until all the desired categories are selected (minimum 1).
-				6.3.5. The system shows the existing geographic areas and requests one.
-				6.3.6. The HRO selects the intended geographical area.
-				6.3.7. The system validates and stores the selected geographic area.
-				6.3.8. Steps 6.3.5 to 6.3.7 repeat until all the desired geographic areas are selected (minimum 1).
-				6.3.9. The system validates and displays data, asking for confirmation..
-				6.3.10. The HRO confirms.
-				6.3.11. The system registers data of the new Service Provider, sends the authentication information to the new Service Provider and informs the HRO of the success of the operation.
-b) **alt 2b->** The HRO accepts the categories - continues for enumeration 7.
-7. The system shows the existing geographic areas and requests one.
-8. The HRO selects the intended geographical area.
-9. The system validates and stores the selected geographic area.
-10. Steps 7 to 9 repeat until all the desired geographic areas are selected (minimum 1).
-11. The system validates and displays data, asking for confirmation.
-12. The HRO confirms.
-13.	The system registers data of the new Service Provider, sends the authentication information to the new Service Provider and informs the HRO of the success of the operation.
+### Partes interessadas e seus interesses
+* **FRH** pretende registar os Prestadores de Serviço para que seja possível disponibilizar os serviços prestados pela empresa.
+* **Empresa:** pretende que o Prestador de Serviço esteja disponível para realizar os serviços solicitados pelos seus clientes.
+* **Prestador de Serviço** necessita de ter um perfil de acesso para indicar a sua disponibilidade por forma a realizar os serviços solicitados pelos clientes da Empresa.
 
 
-### Exception Conditions (alternative flow)
+### Pré-condições
+Existirem Categorias de Serviços e Áreas Geográficas definidas no sistema.
 
-*a. The HRO requests cancellation of registration.
+### Pós-condições
+A informação do registo é guardada no sistema.
 
-> The use case ends.
+## Cenário de sucesso principal (ou fluxo básico)
 
-3a. The HRO enters an invalid NIF.
-> 1. The system informs that the NIF is not valid and re-requests NIF.
-> 2. HRO submits. The use case continues.
+1. O FRH inicia o registo dum novo Prestador de Serviço.
+2. O sistema solicita o NIF do prestador de serviços a registar.
+3. O FRH introduz o NIF do prestador de serviços.
+4. O sistema apresenta os dados do prestador de serviços (i.e. nome completo, NIF, email institucional, endereço postal, contacto telefónico).
+5.  O sistema apresenta a hipostese de o FRH escolher confirmar os dados apresentados ou de introduzir os dados - **alternate.**
+6.
+		a. **O FRH não aceita os dados e inicia introdução manual dos dados.**
+		6.1. O FRH introduz os dados solicitados.
+		6.2. O sistema mostra as categorias de serviços existentes e solicita uma.
+		6.3. O FRH seleciona a categoria de serviço pretendida.
+		6.4. O sistema valida e guarda a categoria selecionada.
+		6.5. Os passos 6.2 a 6.4 repetem-se enquanto não forem selecionadas todas as categorias pretendidas (mínimo 1).
+		6.6. O sistema mostra as áreas geográficas existentes e solicita uma.
+		6.7. O FRH seleciona a área geográfica pretendida.
+		6.8. O sistema valida e guarda a área geográfica selecionada.
+		6.9. Os passos 6.6 a 6.8 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (mínimo 1).
+		6.10. O sistema valida e apresenta os dados, pedindo que os confirme.
+		6.11. O FRH confirma.
+		6.12. O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
+		**Fim de alternate 6.a**
+
+		b. **O FRH aceita e confirma os dados fornecidos pelo sistema**
+		6.1. O sistema mostra as categorias de serviços da candidatura
+		6.2. O sistema apresenta hipotese de escolher confirmar as categorias apresentadas ou de escolher novamente categorias.- **alternate.**
+
+				c. **O FRH não aceita as categorias e inicia a selecção de novas categorias**
+				6.2.1. O sistema mostra as categorias de serviços existentes e solicita uma.
+				6.2.2. O FRH seleciona a categoria de serviço pretendida.
+				6.2.3. O sistema valida e guarda a categoria selecionada.
+				6.2.4. Os passos 6.2.1 a 6.2.3 repetem-se enquanto não forem selecionadas todas as categorias pretendidas (mínimo 1).
+				6.2.5. O sistema mostra as áreas geográficas existentes e solicita uma.
+				6.2.6 O FRH seleciona a área geográfica pretendida.
+				6.2.7 O sistema valida e guarda a área geográfica selecionada.
+				6.2.8 Os passos 6.2.5 a 6.2.7 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (mínimo 1).
+				6.2.9. O sistema valida e apresenta os dados, pedindo que os confirme.
+				6.2.10. O FRH confirma.
+				6.2.11 O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
+				**Fim de alternate 6.2.c**
+
+				d. **O FRH aceita as categorias - prossegue para enumeração 7**
+7. O sistema mostra as áreas geográficas existentes e solicita uma.
+8. O FRH seleciona a área geográfica pretendida.
+9. O sistema valida e guarda a área geográfica selecionada.
+10. Os passos 7 a 9 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (mínimo 1).
+11. O sistema valida e apresenta os dados, pedindo que os confirme.
+12. O FRH confirma.
+13.	O sistema regista os dados do novo Prestador de Serviço, envia os dados de acesso ao novo Prestador de Serviço e informa o FRH do sucesso da operação.
 
 
-3b. The duplication of id number and/or full/abbreviated name and/or email.
->	1. The system informs the HRO about the duplication of data.
->	2. The system allows the introduction of new data.
+### Extensões (ou fluxos alternativos)
+
+*a. O FRH solicita o cancelamento da registo.
+
+> O caso de uso termina.
+
+3a. O FRH introduz um NIF não valido.
+> 1. O sistema informa que o NIF não é válido e volta a solicitar NIF.
+> 2. FRH submete. O caso de uso continua.
+
+
+3a. dados de numero mecanográfico e/ou nome completo/abreviado e/ou email duplicados.
+>	1. O sistema informa o FRH sobre a duplicação dos dados.
+>	2. O sistema permite a introdução de novos dados
 >
-	>	2a. The HRO does not change the data. The use case ends.
+	>	2a. O FRH não altera os dados. O caso de uso termina.
 
-4a. The system does not detect any applications containing the NIF entered.
->	1. The system requests all the necessary data for the registration of Service Provider.
+6a. Dados de Categoria incompletos/duplicados.
+>	1. O sistema informa quais os dados em falta ou duplicados
+>	2. O sistema permite a introdução de novos dados
 >
-	>	2a. The HRO does not fill in the requested data. The use case ends.
+	>	2a. O FRH não altera os dados. O caso de uso termina.
 
-4b. The system detects that there is already a registered Service Provider with the NIF entered.
->	1. The system alerts the HRO to the fact.
->	2. The system allows to change it.
->
-	>	2a. The HRO does not change the data. The use case ends.
-
-6a. Incomplete / duplicate category data.
->	1. The system reports missing or duplicate data.
->	2. The system allows you to enter new data.
->
-	>	2a. The HRO does not change data. The use case ends.
-
-10a. Incomplete / duplicate Geographic Area data.
-  >	1. The system reports missing or duplicate data.
-  >	2. The system allows you to enter new data.
+10a. Dados de Área Geográfica incompletos/duplicados.
+  >	1. O sistema informa quais os dados em falta ou duplicados
+  >	2. O sistema permite a introdução de novos dados
   >
-  	>	2a. The HRO does not change the data. The use case ends.
+  	>	2a. O FRH não altera os dados. O caso de uso termina.
 
-12a. The system detects that the data (or some subset of data) entered must be unique and already exist in the system.
->	1. The system alerts the HRO to the fact.
->	2. The system allows to change it.
+
+12a. O sistema deteta que os dados (ou algum subconjunto dos dados) introduzidos devem ser únicos e que já existem no sistema.
+>	1. O sistema alerta o FRH para o facto.
+>	2. O sistema permite a sua alteração
 >
-	>	2a. The HRO does not change the data. The use case ends.
+	>	2a. O FRH não altera os dados. O caso de uso termina.
 
-12b. The system detects that the entered data (or some subset of data) is invalid.
->	1. The system alerts the HRO to the fact.
->	2. The system allows to change it.
+12b. O sistema detecta que os dados introduzidos (ou algum subconjunto dos dados) são inválidos.
+> 1. O sistema alerta o FRH para o facto.
+> 2. O sistema permite a sua alteração.
 >
-	> 2a. The HRO does not change the data. The use case ends.*
+	> 2a. O FRH não altera os dados. O caso de uso termina.
 
-### Special Requirements
+### Requisitos especiais
 \-
 
-### Variations in Technologies and Data
+### Lista de Variações de Tecnologias e Dados
 \-
 
-### Frequency of Occurrence
+### Frequência de Ocorrência
 \-
 
-### Open Questions
+### Questões em aberto
 
-* Are there other mandatory data besides those already known?
-* What data together allow to detect the duplication of Service Providers?
-* What are the security rules that apply to access data?
-* How is it defined which email system to use?
-* How often does this use case occur?
+* Existem outros dados obrigatórios para além dos já conhecidos?
+* Quais os dados que em conjunto permitem detetar a duplicação de Prestadores de Serviço?
+* Quais são as regras de segurança aplicáveis aos dados de acesso?
+* Qual é o sistema de email a adotar?
+* Temos que suportar mais do que um sistema de email?
+* Como é definido qual é o sistema de email a usar?
+* Qual a frequência de ocorrência deste caso de uso?

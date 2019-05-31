@@ -3,7 +3,7 @@ AfetarPrestadoresTask         | AssignementTask
 AlgoritomoDeAfetacao1         | AssignementAlgoritm1
 AreaGeografica                | GeographicArea
 AtuaEm                        | ActsOn????
-Candidatura                   | ASPApplication
+Candidatura                   | SPApplication
 Categoria                     | Category
 Cliente                       | Client
 CodigoPostal                  | PostalCode
