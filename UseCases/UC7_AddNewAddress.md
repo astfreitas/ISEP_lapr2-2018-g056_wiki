@@ -15,7 +15,7 @@ operation
 SSD
 ---
 
-![SSD_UC7_IT2.png](SSD_UC7_IT2.png)
+![SSD_UC7.png](SSD_UC7.png)
 
 Complete Description
 ----------------

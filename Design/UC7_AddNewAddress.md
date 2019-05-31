@@ -42,9 +42,9 @@ Other software classes (i.e. Pure Fabrication) identified:
 Sequence Diagram
 ---------------------
 
-![SD_UC7_IT2.png](SD_UC7_IT2.png)
+![SD_UC7.jpg](SD_UC7.jpg)
 
 Class Diagram
 -------------------
 
-![CD_UC7_IT2.png](CD_UC7_IT2.png)
+![CD_UC7.jpg](CD_UC7.jpg)
