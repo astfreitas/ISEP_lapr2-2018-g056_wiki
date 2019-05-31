@@ -16,7 +16,7 @@
 | UC8   | [Register Service Provider](UseCases/UC8_RegisterServiceProvider.md)                            |
 | UC9   | [Add Daily Availability](UseCases/UC9_AddDailyAvailability.md)                                  |
 | UC10  | [Assign Service Requests to Service Providers](UseCases/UC10_AssignServiceRequests.md)          |
-| UC11  | [Accept Service Request Assignements](UseCases/UC11_AcceptServiceRequestAssignements.md)        |
+| UC11  | [Accept Service Request Assignments](UseCases/UC11_AcceptServiceRequestAssignements.md)         |
 | UC12  | [Preview Service Orders in Main Application](UseCases/UC12_PreviewServiceOrdersMainApp.md)      |
 | UC13  | [CompleteService](UseCases/UC13_CompleteService.md)                                             |
 | UC14  | [Rating SP](UseCases/UC14_RatingSP.md)                                                          |
