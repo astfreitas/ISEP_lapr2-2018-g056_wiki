@@ -3,6 +3,7 @@
 ![Use Cases Diagrams](UseCases/DUC.png)
 
 # Use Cases
+
 | UC    | Description                                                                                     |
 | :---- | :------------------------------------------------------------------------                       |
 | UC1   | [Client Registration](UseCases/UC1_ClientRegistration.md)                                       |
