@@ -1,8 +1,8 @@
-# Realização de UC8 Registar Prestador de Serviço
+# Realization of UC8 Register Service Provider
 
-## Racional
+## Rationale
 
-| Fluxo Principal                                                                                        | Questão: Que Classe...                                      | Resposta                                       | Justificação                                                                                                         |
+| Main Flow                                                                                        | Question: Which class...                                      | Answer                                       | Justification                                                                                                         |
 |:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
 |1. O FRH inicia o registo de Prestador de Serviço.|... interage com o FRH?|RegistarPrestadorServiçoUI|PureFabrication UI|
 ||...coordena o UC?|RegistarPrestadorServiçoController|PureFabrication Controller|
