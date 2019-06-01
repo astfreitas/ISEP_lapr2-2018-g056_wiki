@@ -4,93 +4,81 @@
 
 | Main Flow                                                                                        | Question: Which class...                                      | Answer                                       | Justification                                                                                                         |
 |:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-|1. O FRH inicia o registo de Prestador de Serviço.|... interage com o FRH?|RegistarPrestadorServiçoUI|PureFabrication UI|
-||...coordena o UC?|RegistarPrestadorServiçoController|PureFabrication Controller|
-||...cria/instancia Prestador de Serviço?|RegistoPrestadorServiço| Padrão HC + LC (sobre Empresa) + Creator (Regra 1)|
-|2. O sistema solicita o NIF do prestador de serviços a registar. |
-|3. O FRH introduz o NIF do prestador de serviços.|... guarda o NIF?|Prestador de Serviço|Information Expert (IE) - instância criada no passo 1|
-||...sabe o estado da Candidatura?| EstadoCandidatura | IE |
-||...guarda as Candidaturas a Prestador de Serviços?|RegistoCandidaturas| Padrão HC + LC (sobre Empresa)|
-||...guarda os dados dos candidatos a Prestador de Serviços?|Candidatura| IE |
-|4. O sistema apresenta os dados do prestador de serviços (i.e. nome completo, NIF, email institucional, endereço postal, contacto telefónico).|...guarda os dados carregados?|RegistarPrestadorServiçoController|PureFabrication Controller - aguarda decisão do utilizador|
-|5. O sistema apresenta a hipostese de o FRH escolher confirmar os dados apresentados ou de introduzir os dados - **alternate.**|..quem controla a decisão?|RegistarPrestadorServiçoController - coordenada UC|
-|6. a. **O FRH não aceita os dados e inicia introdução manual dos dados.**|
-|6.a.1. O FRH introduz os dados solicitados.|... guarda os dados introduzidos?|Prestador de Serviço|Information Expert (IE) - instância criada no passo 1|
-|6.a.2 O sistema mostra as categorias de serviços existentes e solicita uma.|...conhece as categorias?|RegistoCategoria|Information Expert (IE)|
-|6.a.3 O FRH seleciona a categoria de serviço pretendida.|||||
-|6.a.4 O sistema valida e guarda a categoria selecionada.|... guarda a categoria selecionada| Prestador de Serviço (inclui a lista de categorias do PS)|Information Expert (IE) - No MD o Prestador de Serviço está habilitado em uma ou mais categorias|
-|6.a.5 Os passos 6.a.2 a 6.a.4 repetem-se enquanto não forem selecionadas todas as categorias pretendidas (minimo 1).||||
-|6.a.6 O sistema mostra as áreas geográficas existentes e solicita uma.|...conhece as áreas geográficas?|RegistoÁreaGeográfica|IE|
-|6.a.7 O FRH seleciona a área geográfica pretendida.||||
-|6.a.8 O sistema valida e guarda a àrea geográfica selecionada.|... guarda a área geográfica seleccionada?| Prestador de Serviço (inclui a lista de áreas geográficas do PS) |Information Expert (IE) - No MD o Prestador de Serviço atua em uma ou mais áreas geográficas|
-|6.a.9 Os passos 6.a.6 a 6.a.8 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (minimo 1).||||
-|6.a.10 O sistema valida e apresenta os dados, pedindo que os confirme.|...valida os dados do Prestador de Serviço (validação local)?|Prestador de Serviço|IE: Prestador de Serviço possui os seus próprios dados|
-||...valida os dados do Prestador de Serviço (validação global)?|RegistoPrestadorServiço|IE: O RegistoPrestadorServiço contém/agrega Prestadores de Serviço|
-|6.a.11 O FRH confirma. ||||
-|6.a.12 O sistema **regista os dados de Prestador de Serviço e de Prestador de Serviço registado, notifica o Prestador de Serviço dos seus dados de acesso** e informa o FRH do sucesso da operação.|...guarda o Prestador de Serviço registado?|RegistoPrestadorServiço|IE. o RegistoPrestadorServiço contém/agrega Prestadores de Serviço|
-|| ... guarda os dados de utilizador deste Prestador de Serviço?  | AutorizacaoFacade | IE. A gestão de utilizadores é responsabilidade do componente externo respetivo cujo ponto de interação é através da classe "AutorizacaoFacade" |   
-|| ... notifica o Prestador de Serviço dos seus dados de acesso  | RegistoPrestadorServiço | IE: possui os dados para o fazer.|
-|6. b. **O FRH aceita e confirma os dados fornecidos pelo sistema**|
-|6.b.1 O sistema mostra as categorias de serviços da candidatura|...tem os dados da Candidaturas a Prestador de Serviços?|RegistoCandidaturas| Padrão HC + LC (sobre Empresa)|
-||...conhece as categorias?|RegistoCategoria|Information Expert (IE)|
-|6.2. O sistema apresenta hipotese de escolher confirmar as categorias apresentadas ou de escolher novamente categorias.- **alternate.**|
-|6.2.c.1 **O FRH não aceita as categorias e inicia a selecção de novas categorias**|
-|6.2.c.2 O sistema mostra as categorias de serviços existentes e solicita uma.|...conhece as categorias?|RegistoCategoria|Information Expert (IE)|
-|6.2.c.3 O FRH seleciona a categoria de serviço pretendida.|||||
-|6.2.c.4 O sistema valida e guarda a categoria selecionada.|... guarda a categoria selecionada| Prestador de Serviço (inclui a lista de categorias do PS)|Information Expert (IE) - No MD o Prestador de Serviço está habilitado em uma ou mais categorias|
-|6.2.c.5 Os passos 6.2.c.2 a 6.2.c.4 repetem-se enquanto não forem selecionadas todas as categorias pretendidas (minimo 1).||||
-|6.2.c.6 O sistema mostra as áreas geográficas existentes e solicita uma.|...conhece as áreas geográficas?|RegistoÁreaGeográfica|IE|
-|6.2.c.7 O FRH seleciona a área geográfica pretendida.||||
-|6.2.c.8 O sistema valida e guarda a àrea geográfica selecionada.|... guarda a área geográfica seleccionada?| Prestador de Serviço (inclui a lista de áreas geográficas do PS) |Information Expert (IE) - No MD o Prestador de Serviço atua em uma ou mais áreas geográficas|
-|6.2.c.9 Os passos 6.a.6 a 6.a.8 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (minimo 1).||||
-|6.2.c.10 O sistema valida e apresenta os dados, pedindo que os confirme.|...valida os dados do Prestador de Serviço (validação local)?|Prestador de Serviço|IE: Prestador de Serviço possui os seus próprios dados|
-||...valida os dados do Prestador de Serviço (validação global)?|RegistoPrestadorServiço|IE: O RegistoPrestadorServiço contém/agrega Prestadores de Serviço|
-|6.2.c.11 O FRH confirma. ||||
-|6.2.c.13 O sistema **regista os dados de Prestador de Serviço e de Prestador de Serviço registado, notifica o Prestador de Serviço dos seus dados de acesso** e informa o FRH do sucesso da operação.|...guarda o Prestador de Serviço registado?|RegistoPrestadorServiço|IE. o RegistoPrestadorServiço contém/agrega Prestadores de Serviço|
-|| ... guarda os dados de utilizador deste Prestador de Serviço?  | AutorizacaoFacade | IE. A gestão de utilizadores é responsabilidade do componente externo respetivo cujo ponto de interação é através da classe "AutorizacaoFacade" |   
-|| ... notifica o Prestador de Serviço dos seus dados de acesso  | RegistoPrestadorServiço | IE: possui os dados para o fazer.|
-|6.2.d.1 **O FRH aceita as categorias - prossegue UC**|*******
-|7. O sistema mostra as áreas geográficas existentes e solicita uma.|...conhece as áreas geográficas?|RegistoÁreaGeográfica|IE|
-|8. O FRH seleciona a área geográfica pretendida.||||
-|9. O sistema valida e guarda a àrea geográfica selecionada.|... guarda a área geográfica seleccionada?| Prestador de Serviço (inclui a lista de áreas geográficas do PS) |Information Expert (IE) - No MD o Prestador de Serviço atua em uma ou mais áreas geográficas|
-|10. Os passos 8 a 10 repetem-se enquanto não forem selecionadas todas as áreas geográficas pretendidas (minimo 1).||||
-|11. O sistema valida e apresenta os dados, pedindo que os confirme.|...valida os dados do Prestador de Serviço (validação local)?|Prestador de Serviço|IE: Prestador de Serviço possui os seus próprios dados|
-||...valida os dados do Prestador de Serviço (validação global)?|RegistoPrestadorServiço|IE: O RegistoPrestadorServiço contém/agrega Prestadores de Serviço|
-|12. O FRH confirma. ||||
-|13. O sistema **regista os dados de Prestador de Serviço e de Prestador de Serviço registado, notifica o Prestador de Serviço dos seus dados de acesso** e informa o FRH do sucesso da operação.|...guarda o Prestador de Serviço registado?|RegistoPrestadorServiço|IE. o RegistoPrestadorServiço contém/agrega Prestadores de Serviço|
-|| ... guarda os dados de utilizador deste Prestador de Serviço?  | AutorizacaoFacade | IE. A gestão de utilizadores é responsabilidade do componente externo respetivo cujo ponto de interação é através da classe "AutorizacaoFacade" |   
-|| ... notifica o Prestador de Serviço dos seus dados de acesso  | RegistoPrestadorServiço | IE: possui os dados para o fazer.|          
+|1. The HRO starts the registration of Service Provider (SP).|... interacts with the HRO?|RegisterServiceProviderUI|PureFabrication UI|
+||...coordinates the UC?|RegisterServiceProviderController|PureFabrication Controller|
+||...creates/instance ServiceProvider?|RegisterServiceProvider| Standard HC + LC (on Company) + Creator (Rule 1)|
+|2. The system requests the NIF of the service provider to register. |
+|3. The HRO enters the NIF of the service provider.|... saves NIF?|ServiceProvider|Information Expert (IE) - instance created in step 1|
+||...knows the state of the SPApplication?| SPApplicationStatus | IE |
+||...keeps the SPApplication?|SPApplicationRegistry| Standard HC + LC (on Company)|
+||...keeps the data of the candidates for ServiceProviders?|SPApplication| IE |
+|4. The system displays the SP information found (i.e. full name, **NIF**, postal address).|...saves the loaded data?|RegisterServiceProviderController|PureFabrication Controller - awaits user decision|
+|5. The System prompts HRO to accept or not the displayed data - **alternate 1**|...controls the decision?|RegisterServiceProviderController - coordinates UC|
+|5.a **The HRO does not accept data and starts manual data entry (full name and postal address).**|
+|5.a.1 The HRO enters the requested data.|... keeps the data entered?|ServiceProvider|Information Expert (IE) - instance created in step 1|
+|5.a.2 The system displays list of categories and requests one.|...knows the categories?|CategoryRegistry|Information Expert (IE)|
+|5.a.3 The HRO selects a category.|||||
+|5.a.4 The system validates and saves the selected category.|...keeps the selected category?| ServiceProvider (includes the SP category list)|Information Expert (IE) - In DM the ServiceProvider is enabled in one or more categories|
+|5.a.5 Steps 5.a.2 to 5.a.4 repeat until all the desired categories are selected (minimum 1).||||
+|5.b **The HRO accepts and confirms the data provided by the system**|
+|5.b.1 The system shows the categories of the application.|...has the data for the SPApplication?| SPApplicationRegistry | Standard HC + LC (on Company)|
+||...knows the categories?|CategoryRegistry|Information Expert (IE)|
+|6. The system proposes that HRO accept or reject the categories included in the SP application. - **alternate 2**|
+|6.a **The HRO does not accept categories and starts a new category selection**|
+|6.a.1 The system displays list of categories and requests one.|...knows the categories?|CategoryRegistry|Information Expert (IE)|
+|6.a.2 The HRO selects a category.|||||
+|6.a.3 The system validates and saves the selected category.|...saves the selected category?| ServiceProvider (includes the SP category list)|Information Expert (IE) - In DM the ServiceProvider is enabled in one or more categories|
+|6.a.4 Steps 6.a.1 to 6.a.3 repeat until all the desired categories are selected (minimum 1).||||
+|6.b **HRO accepts categories - UC continues**||||
+|6.b.1 The system allows HRO to add categories to existing ones, shows the list of categories and requests one..|...knows the categories?|CategoryRegistry|Information Expert (IE)|
+|6.b.2 The HRO selects a category.|||||
+|6.b.3 The system validates and saves the selected category.|...saves the selected category?| ServiceProvider (includes the SP category list)|Information Expert (IE) - In DM the ServiceProvider is enabled in one or more categories|
+|6.b.4 Steps 6.b.1 to 6.b.3 repeat until all desired categories are selected..||||
+|7. The system shows the existing geographic areas and requests one..|...knows the geographical areas?|GeographicAreaRegistry|IE|
+|8. The HRO selects the intended geographical area.||||
+|9. The system validates and saves the selected geographic area.|...keeps the selected geographic area?| ServiceProvider (includes the list of geographical areas of the SP) |Information Expert (IE) - In DM ServiceProvider operates in one or more geographic areas|
+|10. Steps 8 to 10 repeat until all the desired geographic areas are selected (minimum 1)..||||
+|11. The system validates and displays data, asking to confirm.|...validates the ServiceProvider data (local validation)?|ServiceProvider|IE: ServiceProvider has its own data|
+||...validates the ServiceProvider data (global validation)?|RegisterServiceProvider|IE: RegisterServiceProvider contains/adds service providers|
+|12. The HRO confirms. ||||
+|13. The system **registers the SP data and the registered SP, notifies the SP of his access credentials** and informs the HRO of the success of the operation..|...generates the id number? | RegisterServiceProvider | IE the id number is automatically generated randomly|
+||...generates the institutional email address? | RegisterServiceProvider | IE automatically generates the institutional email (with the data of the id number and Company name)|
+||...generates the abbreviated name? | RegisterServiceProvider | IE automatically generates the abbreviated name (with full name data)|
+||...keeps the registered service provider?|RegisterServiceProvider|IE. RegisterServiceProvider contains/adds Service Providers|
+||...saves the user data of this ServiceProvider? | AuthorizationFacade | IE. User management is the responsibility of the respective external component whose point of interaction is through the class "AuthorizationFacade" |   
+||...notifies the ServiceProvider of his authentication info?  | RegisterServiceProvider | IE: has the data to do|          
 
 
-## Sistematização ##
+## Systematization ##
 
- Do racional resulta que as classes conceptuais promovidas a classes de software são:
+ From rational it results that the conceptual classes promoted to software classes are:
 
- * Empresa
- * FRH
- * Prestador de Serviço
- * Categoria
- * Área Geográfica
- * Candidatura
+ * Company
+ * HRO
+ * ServiceProvider
+ * Category
+ * GeographicArea
+ * SPApplication
+ * SPApplicationStatus
 
-Outras classes de software (i.e. Pure Fabrication) identificadas:  
+Other software classes (i.e. Pure Fabrication) identified:  
 
- * RegistarPrestadorServiçoUI  
- * RegistarPrestadorServiçoController
- * RegistoPrestadorServiço
- * RegistoCategoria
- * RegistoÁreaGeográfica
- * RegistoCandidaturas
- * Autorização/Facade
+ * RegisterServiceProviderUI  
+ * RegisterServiceProviderController
+ * RegisterServiceProvider
+ * CategoryRegistry
+ * GeographicAreaRegistry
+ * SPApplicationRegistry
+ * AuthorizationFacade
 
 
 
-##	Diagrama de Sequência
+##	Sequence Diagram
 
 ![SD_UC8_IT2.png](SD_UC8_IT3.png)
 
-**Nota:** O PrestadorServico possui duas listas (ListaCategoriasPS e ListaAreaGeoPS) obtidas por aplicação de HC+LC. Contudo, optou-se por não expor essas listas para o exterior. Ou seja, a delegação de responsabilidades que ocorreu não é conhecida do resto do sistema (i.e. delegação privada de responsabilidades).
+** Note: ** The Service Provider has two lists (SPcatList and SPgeoAreaList) obtained by application of HC + LC. However, it was decided not to expose these lists abroad. That is, the delegation of responsibilities that occurred is not known from the rest of the system (i.e. private delegation of responsibilities).
 
-##	Diagrama de Classes
+##	Class Diagram
 
 ![CD_UC8_IT2.png](CD_UC8_IT2v1.png)
