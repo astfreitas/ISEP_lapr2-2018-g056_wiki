@@ -12,7 +12,7 @@
 | UC8   | [Register Service Provider](Design/UC8_RegisterServiceProvider.md)                            |
 | UC9   | [Add Daily Availability](Design/UC9_AddDailyAvailability.md)                                  |
 | UC10  | [Assign Service Requests to Service Providers](Design/UC10_AssignServiceRequests.md)          |
-| UC11  | [Accept Service Request Assignements](Design/UC11_AcceptServiceRequestAssignements.md)        |
+| UC11  | [Accept Service Request Assignments](Design/UC11_AcceptServiceRequestAssignments.md)          |
 | UC12  | [Preview Service Orders in Main Application](Design/UC12_PreviewServiceOrdersMainApp.md)      |
 | UC13  | [CompleteService](Design/UC13_CompleteService.md)                                             |
 | UC14  | [Rating SP](Design/UC14_RatingSP.md)                                                          |
