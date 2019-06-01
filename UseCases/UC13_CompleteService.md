@@ -5,7 +5,7 @@
 The Service Provider (SP) initiates the process for completing a service order. The system shows pending service execution orders and requests to select one. The Service Provider selects one. The system shows the details of the service order and asks SP if the service was executed as stipulated. The SP can confirm or report any occurrence. If the service was executed as stipulated, the SP concludes it. If something unexpected happened, the system asks for a description of that occurrence. The Service Provider introduce a description reporting the issue and troubleshooting strategy and concludes the service. The system stores the information and the execution order changes the state to complete.
 
 ## SSD
-![SSD_UC12_IT3.png](SSD_UC12_IT3.png)
+![SSD_UC13.png](SSD_UC13.png)
 
 ## Full Description
 
