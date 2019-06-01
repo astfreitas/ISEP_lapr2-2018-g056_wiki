@@ -5,7 +5,7 @@
 O FRH inicia o registo do novo Prestador de Serviço. O sistema solicita o NIF do prestador de serviços a registar. O FRH indica o NIF do prestador de serviços a registar. O sistema apresenta os dados do prestador de serviços (i.e. nome completo, NIF, email institucional, endereço postal, contacto telefónico, categorias de serviços) indicado e solicita confirmação. O FRH confirma os dados ou procede à sua edição. O sistema valida e apresenta os dados, pedindo que os confirme. O FRH confirma os dados apresentados pelo sistema. O sistema regista os dados do novo Prestador de Serviço e informa o FRH do sucesso da operação. O sistema envia os dados de acesso ao novo Prestador de Serviço.
 
 ## SSD
-![UC8-SSD-IT3.png](SSD_UC8_IT3.png)
+![UC8-SSD-IT4.png](SSD_UC8_IT4.png)
 
 ## Formato Completo
 
