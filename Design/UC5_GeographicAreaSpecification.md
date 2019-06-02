@@ -39,7 +39,7 @@ Other software classes (i.e. Pure Fabrication) identified:
 ### Solução Base
 ![SD_UC5_IT2.png](SD_UC5_IT2.png)
 
-**It was applied _"Interaction Use"_ so that the Sequence Diagram has a reference to the diagram that details / complements the main diagram.
+**It was applied _"Interaction Use"_ so that the Sequence Diagram has a reference to the diagram that details / complements the main diagram.**
 
 
 ### Detail Diagram

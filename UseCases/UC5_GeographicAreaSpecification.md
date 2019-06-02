@@ -62,7 +62,7 @@ All data regarding the geographic area is registered in the system.
 
 4d. The system is not able to determine the postal codes covered by the geographical area.
 > 1. The system alerts the administrative to this matter.
-	> The use case ends.
+	> The use case ends.*
 
 ### Special Requirements
 \-
