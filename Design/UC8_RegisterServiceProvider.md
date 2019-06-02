@@ -75,7 +75,7 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ##	Sequence Diagram
 
-![SD_UC8_IT2.png](SD_UC8_IT3.png)
+![SD_UC8_IT4.png](SD_UC8_IT4.png)
 
 ** Note: ** The Service Provider has two lists (SPcatList and SPgeoAreaList) obtained by application of HC + LC. However, it was decided not to expose these lists abroad. That is, the delegation of responsibilities that occurred is not known from the rest of the system (i.e. private delegation of responsibilities).
 
