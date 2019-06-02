@@ -2,7 +2,7 @@
 
 ## Brief Description
 
-The Service Provider (SP) initiates the process for completing an execution order. The system shows pending service execution orders and requests to select one. The Service Provider selects one. The system shows the details of the execution order and asks SP if the service was executed as stipulated. The SP can confirm or report any occurrence. If the service was executed as stipulated, the SP concludes it. If something unexpected happened, the system asks for a description of that occurrence. The Service Provider introduce a description reporting the issue and troubleshooting strategy and concludes the service. The system stores the information and the execution order changes status to complete.
+The Service Provider (SP) initiates the process for completing an execution order. The system shows pending service execution orders and requests to select one. The Service Provider selects one. The system shows service details of the execution order and asks SP if the service was executed as stipulated. The SP can confirm or report any occurrence. If the service was executed as stipulated, the SP concludes it. If something unexpected happened, the system asks for a description of that occurrence. The Service Provider introduce a description reporting the issue and troubleshooting strategy and concludes the service. The system stores the information and the execution order changes status to complete.
 
 ## SSD
 ![SSD_UC13.png](SSD_UC13.png)
@@ -27,7 +27,7 @@ Existence of pending execution order
 1. The Service Provider (SP) initiates the process for completing a service order.
 2. The system shows pending service execution orders and requests to select one.
 3. The Service Provider selects one.
-4. The system shows the details of the service order and asks SP if the service was executed as stipulated.
+4. The system shows service details of the execution order and asks SP if the service was executed as stipulated.
 5. The SP can confirm or report any occurrence.
 6. If the service was executed as stipulated, the SP concludes it.
 7. If something unexpected happened. The system asks for a description of that occurrence.
