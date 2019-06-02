@@ -5,13 +5,12 @@
 |:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
 |1. The Service Provider (SP) initiates the process for completing an execution order.|...interacts with the SP?|CompleteServiceUI|Pure Fabrication|
 ||...coordinates the UC?|CompleteServiceController|Controller|
-|2. The system shows pending service execution orders and requests to select one.|...knows the list of execution orders?|Company|IE - Information Expert|
-||...has the list of execution orders?|ExecutionOrderRegistry| HC + LC |
+|2. The system shows pending service execution orders and requests to select one.|...knows the execution orders?|Company|IE - Information Expert|
+||...has the execution orders?|ExecutionOrderRegistry| HC + LC |
 ||...knows the class ExecutionOrderRegistry?|Company| HC + LC |
-||...knows the execution orders?|ExecutionOrderRegistry| HC + LC |
 ||...knows the status of execution orders?|ExecutionOrder|IE|
 |3. The Service Provider selects one.||||
-|4. The system shows the details of the execution order and asks SP if the service was executed as stipulated.||||
+|4. The system shows the details of the service of the execution order and asks SP if the service was executed as stipulated.||||
 ||...knows the service details in the execution orders?|ExecutionOrder|IE|
 |5. The SP can confirm or report any occurrence.||||
 |6. The service was executed as stipulated, the SP concludes it.|...is responsible for saving the new status of the execution order?|ExecutionOrderStatus|IE|
@@ -39,9 +38,7 @@
 
 ##	Sequence Diagram
 
-![SD_UC13.png](SD_UC13.png)
-
-Note: The Service Provider has a list (SPExecutionOrderList) obtained by application of HC + LC. However, it was decided not to expose these list abroad. That is, the delegation of responsibilities that occurred is not known from the rest of the system (i.e. private delegation of responsibilities).
+![SD_UC13_v2.png](SD_UC13.png)
 
 ##	Class Diagram
 
