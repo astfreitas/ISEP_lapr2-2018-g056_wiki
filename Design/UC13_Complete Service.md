@@ -22,17 +22,19 @@
 
 ## Systematization ##
 
- From rational it results that the conceptual classes promoted to software classes are:
-* Company
-* ServiceProvider
-* ExecutionOrder
-* ExecutionOrderStatus
+ From rational it results that the conceptual classes promoted to software classes are:  
+
+ * Company  
+ * ServiceProvider  
+ * ExecutionOrder  
+ * ExecutionOrderStatus  
 
 
-Other software classes (i.e. Pure Fabrication) identified:  
-* CompleteServiceUI
-* CompleteServiceController
-* ExecutionOrderRegistry
+ Other software classes (i.e. Pure Fabrication) identified:  
+
+ * CompleteServiceUI  
+ * CompleteServiceController  
+ * ExecutionOrderRegistry  
 
 
 ##	Sequence Diagram
