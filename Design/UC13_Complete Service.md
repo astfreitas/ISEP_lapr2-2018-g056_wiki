@@ -39,6 +39,7 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ![SD_UC13.png](SD_UC13.png)
 
+Note: The Service Provider has a list (SPExecutionOrderList) obtained by application of HC + LC. However, it was decided not to expose these list abroad. That is, the delegation of responsibilities that occurred is not known from the rest of the system (i.e. private delegation of responsibilities).
 
 ##	Class Diagram
 
