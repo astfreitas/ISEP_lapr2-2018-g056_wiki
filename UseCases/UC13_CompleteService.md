@@ -2,7 +2,7 @@
 
 ## Brief Description
 
-The Service Provider (SP) initiates the process for completing a service order. The system shows pending service execution orders and requests to select one. The Service Provider selects one. The system shows the details of the service order and asks SP if the service was executed as stipulated. The SP can confirm or report any occurrence. If the service was executed as stipulated, the SP concludes it. If something unexpected happened, the system asks for a description of that occurrence. The Service Provider introduce a description reporting the issue and troubleshooting strategy and concludes the service. The system stores the information and the execution order changes the state to complete.
+The Service Provider (SP) initiates the process for completing an execution order. The system shows pending service execution orders and requests to select one. The Service Provider selects one. The system shows the details of the execution order and asks SP if the service was executed as stipulated. The SP can confirm or report any occurrence. If the service was executed as stipulated, the SP concludes it. If something unexpected happened, the system asks for a description of that occurrence. The Service Provider introduce a description reporting the issue and troubleshooting strategy and concludes the service. The system stores the information and the execution order changes status to complete.
 
 ## SSD
 ![SSD_UC13.png](SSD_UC13.png)
@@ -15,7 +15,7 @@ Service Provider
 
 ### Stakeholders and purposes
 * **Service Provider:** Service Provider is interested in completing the execution of service orders assigned to him
-* **Company:** Company is interested in knowing the status of the orders of execution
+* **Company:** Company is interested in knowing the status of the execution orders
 
 ### Preconditions
 Existence of pending execution order
@@ -32,7 +32,7 @@ Existence of pending execution order
 6. If the service was executed as stipulated, the SP concludes it.
 7. If something unexpected happened. The system asks for a description of that occurrence.
 8. The Service Provider introduce a description reporting the issue and troubleshooting strategy and concludes the service.
-9. The system stores the information, the execution order changes the state to complete and informs the SP of the success of the operation.
+9. The system stores the information, the execution order changes status to complete and informs the SP of the success of the operation.
 
 ### Exception conditions (alternative flow)
 *a. The SP requests cancellation of the process for completing a service order.
