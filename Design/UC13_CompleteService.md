@@ -9,8 +9,9 @@
 ||...has the execution orders?|ExecutionOrderRegistry| HC + LC |
 ||...knows the class ExecutionOrderRegistry?|Company| HC + LC |
 ||...knows the status of execution orders?|ExecutionOrder|IE|
+||...knows the service description of execution orders?|ExecutionOrder|IE|
 |3. The Service Provider selects one.||||
-|4. The system shows the details of the service of the execution order and asks SP if the service was executed as stipulated.||||
+|4. The system shows service details of the execution order and asks SP if the service was executed as stipulated.||||
 ||...knows the service details in the execution orders?|ExecutionOrder|IE|
 |5. The SP can confirm or report any occurrence.||||
 |6. The service was executed as stipulated, the SP concludes it.|...is responsible for saving the new status of the execution order?|ExecutionOrderStatus|IE|
@@ -38,7 +39,7 @@
 
 ##	Sequence Diagram
 
-![SD_UC13_v2.png](SD_UC13.png)
+![SD_UC13_v2.png](SD_UC13_v2.png)
 
 ##	Class Diagram
 
