@@ -7,7 +7,7 @@ The Service Provider starts consultation service execution orders. The system re
 ## SSD
 ![SSD_UC12_IT3.png](SSD_UC12_IT3.png)
 
-## Full Description,
+## Full Description
 
 ### Primary Actor
 
