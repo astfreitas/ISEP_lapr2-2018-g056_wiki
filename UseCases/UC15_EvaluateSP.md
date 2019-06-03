@@ -45,6 +45,18 @@ The Service Provider's classification is defined in the system.
 
 ### Exception conditions (alternative flow)
 
+*a. The HRO requests cancelation of the Service Provider Evaluation.
+
+> The Use Case ends.
+
+2a. No Service Provider is found by the System.
+> 1. The System informs the HRO that the System does  and the Use Case ends.
+
+4a. The Service Provider does not posess any ratings.
+> 1. The System informs the HRO and allows
+
+
+
 
 ### Special requirements
 * The SP's rating distribution must be displayed in form of an histogram (values between 0-5)
@@ -66,4 +78,5 @@ The Service Provider's classification is defined in the system.
 \-
 
 ### Open questions
-\-
+
+* Is the SP's classification the only data that needs to be stored?
