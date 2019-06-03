@@ -49,4 +49,4 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ##    Class Diagram
 
-![CD_UC11_v2.jpg](CD_UC11_v2.jpg)
+![CD_UC11_V2.jpg](CD_UC11_V2.jpg)
