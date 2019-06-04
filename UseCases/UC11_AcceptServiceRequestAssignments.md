@@ -5,7 +5,7 @@
 The Client begins the Assignment verification. The system displays the Service Assignment Information( Availability , SP rating and classification ). The Client Accepts. The system informs the success of the operation along with the Service Assignment Order
 
 ## SSD
-![SSD_UC11.jpg](SSD_UC11.jpg)
+![SSD_UC11_v2.jpg](SSD_UC11_v2.jpg)
 
 
 ## Full Description
@@ -27,10 +27,11 @@ ServiceOrder Assignment is registered in the system.
 ## Main Success Scenario
 
 1. The Client begins the Assignment verification.
-2. The system displays the Service Assignment Information( Availability , SP rating and classification )
-3. The Client Accepts.
-4. The system informs the success of the operation along with the Service Assignment Order
-5. Steps 2 to 4 repeats until the client verify all Assignments.
+2. The system returns a list of Service Requests with all services assigned.
+3. The Client selects one.
+4. The system displays the list of Service Assignment Information( Availability , SP rating and classification ) requesting validation.
+5. the client accepts the Assignments.
+6. The system informs the success of the operation along with the Service Order Numbers for each service in the service request.
 
 ### Exception Conditions (alternative flow)
 
@@ -38,7 +39,7 @@ ServiceOrder Assignment is registered in the system.
 
 > The use case ends.
 
-3a. The Client Rejects
+5a. The Client Rejects
 > 1. The system informs the success of the operation.
 
 ### Special Requirements

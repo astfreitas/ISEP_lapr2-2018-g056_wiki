@@ -5,9 +5,9 @@
 The Service Provider starts consultation service execution orders. The system requests the period for the execution orders. The provider indicates the period. The system shows the service execution orders and asks if the service provider wants to export this data.
 
 ## SSD
-![SSD_UC12_IT3.png](SSD_UC12_IT3.png)
+![SSD_UC12_IT4.png](SSD_UC12_IT4.png)
 
-## Full Description,
+## Full Description
 
 ### Primary Actor
 
@@ -34,12 +34,32 @@ Service Provider
 
 ### Exception conditions (alternative flow)
 
+*a. The Service Provider requests the cancellation of Preview Service Orders.
+> The use case ends.
+
+3a. Inserted period is invalid.
+> 1. The system informs that the inserted period is invalid.
+> 2. The system allows the Service Provider to re-enter a valid period.
+  > 2a. The Service Provider does not change the inserted period. The use case ends.
+
+4a. The system is not able to find service orders for the inserted period.
+> 1. The system informs that there are no service orders for the provided period.
+> 2. The system allows to re-enter a new period for search (step 3).
+  > 2a. The Service Provider does not change the inserted period. The use case ends.
+
+4b. The Service Provider does not want to export the displayed data.
+> 1. The service provider cancels the export of data. The use case ends.
+
+5a. The Service Provider fails to selects the format to export the data.
+> 1 The use case ends.*
+
 
 ### Special requirements
 \-
 
 ### Variations in technologies and data
 \-
+The system must have a list of possible format compatible to export the data, configured in the configuration file for the app.
 
 ### Frequency of occurrence
 \-

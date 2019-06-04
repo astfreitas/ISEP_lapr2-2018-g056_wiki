@@ -1,38 +1,39 @@
-# Realização de UC12 - Consultar Ordens de Execução de Serviços
-## Racional
+# Realization of UC15 - Evaluate Service Provider
 
-| Fluxo Principal                                                                                        | Questão: Que Classe...                                      | Resposta                                       | Justificação                                                                                                         |
-|:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-|1. O prestador de serviços inicia a identificação da sua disponibilidade diária.|... interage com o utilizador?|ConsultarOrdensUI|Pure Fabrication|
-||...coordena o UC?|ConsultarOrdensController|Controller|
-|2. O sistema solicita um período em que o Prestador pretende consultar as ordens de execução||||
-|3. O prestador de serviços introduz os dados solicitados.||||
-||...quem conhece a classe RegistoOrdensExecucao?|PrestadorServicos| HC + LC |
-||...quem conhece as Ordens de Execução?|RegistoOrdensExecucao| HC + LC |
-|4. O Sistema apresenta as ordens de Execução e questiona se se pretende exportar os dados.||||
-||...conhece os exportadores de Ficheiros?|Empresa | IE|
-||...implementa as particularidades de cada exportador?| ExpotarFicheiroXXXAdapter | IE|
-|8. Operação bem sucedida.||||
+## Rationale
 
-## Sistematização ##
+| Main flow                                                                                      | Question: What Class ...                       | Answer                            | Justification                                                                                        |
+| : ------------------------------------------------                                             | : -----------------                            | : ------------------------------- | : ------                                                                                             |
+| 1. The HRO starts the evaluation of a service provider.                                        | ... interacts with the user?                   | EvaluateSPUI                      | PureFabrication: it is not justified to assign this responsibility to any class in the Domain Model. |
+|                                                                                                | ... coordinates the UC?                        | EvaluateSPController              | Controller                                                                                           |
+| 2. The system shows him the list of Service Providers registered and requires to select one.   | ... knows the Service Providers?               | ServiceProviderRegistry           | IE: ServiceProviderRegistry aggregates all ServiceProviders                                          |
+|                                                                                                | ... knows the ServiceProviderRegistry?         | Company                           | IE: Company has the Register for Service Providers                                                   |
+| 3. The HRO selects a Service Provider.                                                         |                                                |                                   |                                                                                                      |
+| 4. The system displays the SP's rating distribution, statistics and calculated classification. | ... performs the calculations?                 | ServiceProvidersRegistry          | IE: The Registry aggregates and performs operations on all ServiceProviders                          |
+| 5a. The HRO accepts the classification. (step 8)                                               |                                                |                                   |                                                                                                      |
+| 5b. The HRO chooses to modify the classification. (step 6)                                     |                                                |                                   |                                                                                                      |
+| 6. The System provides the possible replacing labels and asks the HRO to choose one.           | ... stores the possible labels/classfications? | ServiceProvider                   | IE: ServiceProvider holds the data related to it's own classification                                |
+| 7. The HRO chooses ones.                                                                       |                                                | ServiceProvider                   | IE: ServiceProvider holds the data related to it's own classification                                |
+| 8. The System registers his choise and informs the HRO of the success of the operation.        | ... stores the selected classification?        |                                   |                                                                                                      |
+| 9. The Use Case ends.                                                                          |                                                |                                   |                                                                                                      |
 
- Do racional resulta que as classes conceptuais promovidas a classes de software são:
-* Empresa
-* PrestadorServicos
-* ExportarFicheiro
+## Systematization
 
+From the rational it results that the conceptual classes promoted to classes of software are:
 
-Outras classes de software (i.e. Pure Fabrication) identificadas:  
-* ConsultarOrdensUI
-* ConsultarOrdensController
-* RegistoOrdensExecucao
+- Company
+- ServiceProviderRegistry
+- ServiceProvider
 
+Other software classes (i.e. Pure Fabrication) identified:
 
-##	Diagrama de Sequência
+- EvaluateSPUI
+- EvaluateSPController
 
-![SD_UC12_IT3.png](SD_UC12_IT3.png)
+## Sequence Diagram
 
+![]( SD_UC15.png)
 
-##	Diagrama de Classes
+## Class Diagram
 
-![CD_UC12_IT3.png](CD_UC12_IT3.png)
+![]( CD_UC15.png)
