@@ -2,7 +2,7 @@
 
 ## Brief description
 
-The unregistered user initiates the registration of a new application for service provider. The system requests the necessary data for the application (full name NIF, phone number, email, postal address (at leats one), academic and professional qualifications and supporting documents). The unregistered user enters the requested data. The system shows the service categories and requests the user to select those whose servers he wishes to provide. The unregistered user select the desired categories. The system validates and displays the data, asking to confirm them. The unregistered user confirms the application. The system registers the new application and informs the user that success of the operation.
+The unregistered user initiates the registration of a new application for service provider. The system requests the necessary data for the application (full name NIF, phone number, email). The unregistered user enters the requested data. The system requests an address (address, postal code, local). The unregistered user enters the data. The system requests academic and professional competences (one or more). The unregistered user enters the requested data. The system shows the service categories and requests the user to select those whose services he wishes to provide (one or more). The unregistered user select the desired categories. The system validates and displays the data, asking to confirm them. The unregistered user confirms the application. The system registers the new application and informs the user that success of the operation.
 ## SSD
 
 ![]( SSD_UC2_IT1.png)
@@ -32,51 +32,35 @@ An application for service provider is registered in the system.
 
 3. The unregistered user enters the requested data.
 
-4. The system requests a postal address.
+4. The system requests a postal address (i.e address, postal code, local).
 
-5. The unregistered user enters the postal address.
+5. The unregistered user enters the request data.
 
-6. The system validates and stores the address.
+6. The system requires an academic qualification.
 
-7. Steps 4 to 6 are repeated until all postal addresses are provided (minimum 1).
+7. The unregistered user introduces the academic qualification (i.e. course, level, grade)
 
-8. The system requires an academic qualification.
+8. Steps 6 to 7 are repeated until all academic qualifications have been entered.
 
-9. The unregistered user introduces the academic qualification
+9. The system requires a professional qualification.
 
-10. The system validates and holds the academic qualification.
+10. The unregistered user introduces the professional qualification (i.e. description).
 
-11. Steps 8 to 10 are repeated until all academic qualifications have been entered.
+11. Steps 9 to 10 are repeated until all professional qualifications have been completed.
 
-12. The system requires a professional qualification.
+12. The system shows the categories of services available in the system.
 
-13. The unregistered user introduces the professional qualification.
+13. The unregistered user selects the category of services he intends to perform.
 
-14. The system validates and holds the professional qualification.
+14. The system validates and stores the selected category.
 
-15. Steps 12 to 14 are repeated until all professional qualifications have been completed.
+15. Steps 12 to 14 are repeated until all categories are entered.
 
-16. The system requests supporting documents proving the user's qualification.
+16. The system validates and presents the application data to the unregistered user and asks him to confirm them.
 
-17. The unregistered user introduces the document.
+17. The unregistered user confirms the application details.
 
-18. The system validates and holds the document.
-
-19. Steps 16 to 18 are repeated until all supporting documents have been entered.
-
-20. The system shows the categories of services available in the system.
-
-21. The unregistered user selects the category of services he intends to perform.
-
-22. The system validates and stores the selected category.
-
-23. Steps 20 to 22 are repeated until all categories are entered.
-
-24. The system validates and presents the application data to the unregistered user and asks him to confirm them.
-
-25. The unregistered user confirms the application details.
-
-26. The system registers the new application and informs the unregistered user of the success of the operation.
+18. The system registers the new application and informs the unregistered user of the success of the operation.
 
 
 ### Extensions (alternative flow)
@@ -85,61 +69,51 @@ An application for service provider is registered in the system.
 
 > End of use case.
 
-6a. Incomplete Postal Address Information.
+5a. Incomplete Postal Address Information.
 
 > 1. The system informs the user of about the missing data.
 
-> 2. The system allows the missing data to be entered (step 5)
+> 2. The system allows the missing data to be entered (step 4)
 
 >> 2a. The unregistered user does not change the data. The use case ends.
 
-10a. Incomplete Academic Enrollment Data.
+7a. Incomplete Academic Enrollment Data.
 
 > 1. The system informs the user of missing data.
 
-> 2. The system allows the user to enter the missing data (step 9)
+> 2. The system allows the user to enter the missing data (step 7)
 
 >> 2a. The unregistered user does not change the data. The use case ends.
 
-14a. Incomplete Professional Qualification Data.
+10a. Incomplete Professional Qualification Data.
 
 > 1. The system informs the user of missing data.
 
-> 2. The system allows the user to enter the missing data (step 13)
+> 2. The system allows the user to enter the missing data (step 10)
 
 >> 2a. The unregistered user does not change the data. The use case ends.
 
-14a. Document format is not supported.
-
-> 1. The system system informs the user.
-
-> 2. The system allows the user to enter another document (step 13)
-
->> 2a. The unregistered user does not change the data. The use case ends.
-
-20a. The system has no service categories to display.
+12a. The system has no service categories to display.
 
 > 1. The system informs that there are no service categories.
 
->> The use case advances to step 24.
+>> The use case advances to step 16.
 
-24a. Required minimum data missing.
+14a. The system verifies that a category has been entered twice.
+
+> 1. The system informs that the category has already been selected.
+
+>> The use case advances to step 13
+
+16a. Required minimum data missing.
 
 > 1. The system informs the user of missing data.
 
-> 2. The system allows the missing data to be entered (step 3)
+> 2. The system allows the missing data to be entered (step 4)
 
 >> 2a. The unregistered user does not change the data. The use case ends.
 
-24b. The system detects that the data (or any subset of the data) entered must be unique and already exist in the system.
-
-> 1. The system alerts the unregistered user to the fact.
-
-> 2. The system allows the user to change it (step 3)
-
->> 2a. The unregistered user does not change the data. The use case ends.
-
-24c. The system detects that the data entered (or some subset of the data) are invalid.
+16b. The system detects that the data entered (or some subset of the data) are invalid.
 
 > 1. The system alerts the unregistered user to the fact.
 
@@ -160,17 +134,3 @@ n/a
 n/a
 
 ### Open questions
-
-- What are the mandatory data for a valid application?
-
-- What are the necessary data related to Academic Qualification?
-
-- What are the necessary data related to a Professional Qualification?
-
-- What is the data that uniquely identifies an application?
-
-- How does the unregistered user know that his / her application has been accepted?
-
-- There is a limit of categories of services to which the unregistered user can the user apply?
-
-- Who is responsible for promoting the candidate to an effective service provider in the company?
