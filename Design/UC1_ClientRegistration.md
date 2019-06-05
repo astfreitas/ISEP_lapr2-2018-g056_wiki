@@ -28,12 +28,12 @@ From the rational it results that the conceptual classes promoted to software cl
  * Address
  * Postal Code
  * Client
- * ClientRegistry
 
 Other software classes (i.e. Pure Fabrication) identified:
 
  * ClientRegistrationUI  
  * ClientRegistrationController
+ * ClientRegistry
 
 ##	Sequence Diagram
 

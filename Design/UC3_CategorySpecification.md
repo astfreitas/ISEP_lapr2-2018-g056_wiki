@@ -26,6 +26,7 @@ Other software classes (i.e. Pure Fabrication) identified:
 
  * CategorySpecificationUI  
  * CategorySpecificationController
+ * CategoryRegistry
 
 
 ##	Sequence Diagram
