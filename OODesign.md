@@ -15,7 +15,7 @@
 | UC11  | [Accept Service Request Assignments](Design/UC11_AcceptServiceRequestAssignments.md)          |
 | UC12  | [Preview Service Orders in Main Application](Design/UC12_PreviewServiceOrdersMainApp.md)      |
 | UC13  | [CompleteService](Design/UC13_CompleteService.md)                                             |
-| UC14  | [Rating SP](Design/UC14_RatingSP.md)                                                          |
+| UC14  | [Rating SP](Design/UC14_RatingServiceProvider.md)                                                          |
 | UC15  | [Evaluate SP](Design/UC15_EvaluateSP.md)                                                      |
 | UC16  | [Import Service Orders](Design/UC16_ImportServiceOrders.md)                                   |
 | UC17  | [Analyze Service Orders](Design/UC17_AnalyzeServiceOrders.md)                                 |
