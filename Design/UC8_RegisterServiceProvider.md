@@ -81,4 +81,4 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ##	Class Diagram
 
-![CD_UC8_IT2.png](CD_UC8_IT2v1.png)
+![CD_UC8.png](CD_UC8.png)
