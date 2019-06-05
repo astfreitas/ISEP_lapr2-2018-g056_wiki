@@ -17,6 +17,6 @@
 | UC13  | [CompleteService](Design/UC13_CompleteService.md)                                             |
 | UC14  | [Rating SP](Design/UC14_RatingSP.md)                                                          |
 | UC15  | [Evaluate SP](Design/UC15_EvaluateSP.md)                                                      |
-| UC16  | [Import Execution Orders](Design/UC16_ImportExecutionOrders.md)                               |
-| UC17  | [Analyze Execution Orders](Design/UC17_AnalyzeExecutionOrders.md)                             |
+| UC16  | [Import Service Orders](Design/UC16_ImportServiceOrders.md)                                   |
+| UC17  | [Analyze Service Orders](Design/UC17_AnalyzeServiceOrders.md)                                 |
 | UC18  | [Analyze Client Timeline](Design/UC18_AnalyzeClientTimeline.md)                               |
