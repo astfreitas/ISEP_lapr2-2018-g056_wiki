@@ -12,14 +12,13 @@
 ||...who knows the Service Orders|ServiceOrderRegistry|HC + LC|
 |4. The system shows the existing service orders for the selected period and prompts the Service Provider if it wants to export the displayed data.||||
 |5. The Service Provider requests to export the displayed data.||||
-||...knows the type of exporters of Files?|Company|IE|
-||...implements the particularities of each exporter?|ExportFileoXXXAdapter|IE|
+||...knows the type of exporters of Files?|FileTypeRegistry|HC + LC|
 |6. The system displays type of files for export format and prompts to select(i.e. csv, xml, xls).||||
 |7. The Service Provider selects the export format.|||||
 ||...who has the selected orders to export?|ConsultServiceOrderController|coordinates the UC|
 ||...who is responsible to validate and order the export?|ServiceOrderRegistry|HC+LC|
-||...who knows the class responsible to export data|Company|HC + LC|
-||...is responsible to export instance data to file|ExportUtil|IE|
+||...who knows the class responsible to export data|FileTypeRegistry|HC + LC|
+||...implements the particularities of each exporter?|ExportFileXXXAdapter|IE|
 |8. Successful operation.||||
 
 
@@ -29,22 +28,21 @@
  From the rationale results that the following conceptual classes are promoted to software classes are:
 * Company
 * ServiceProvider
-* ExportFileoXXXAdapter
-* ExportUtil
+* ExportFileXXXAdapter
 
 
 Other software classes (i.e. Pure Fabrication) identified:  
 * ConsultServiceOrderUI
 * ConsultServiceOrderController
 * ServiceOrderRegistry
-* TypeFilesRegistry
+* FileTypeRegistry
 
 
 ##	Detail Diagram
 
-![SD_UC12_IT4.png](SD_UC12_IT4.png)
+![SD_UC12.png](SD_UC12.png)
 
 
 ##	Class Diagram
 
-![CD_UC12_IT4.png](CD_UC12_IT3.png)
+![CD_UC12.png](CD_UC12.png)
