@@ -2,7 +2,7 @@ AfetacaoServico               | ServiceAssignement
 AfetarPrestadoresTask         | AssignementTask
 AlgoritomoDeAfetacao1         | AssignementAlgoritm1
 AreaGeografica                | GeographicArea
-AtuaEm                        | ActsOn????
+AtuaEm                        | Location
 Candidatura                   | SPApplication
 Categoria                     | Category
 Cliente                       | Client

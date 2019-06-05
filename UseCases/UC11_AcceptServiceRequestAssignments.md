@@ -53,6 +53,5 @@ ServiceOrder Assignment is registered in the system.
 
 ### Open Questions
 
-* Is it possible to accept all the Service Assignments at once?
-* Do I have to save rejected Service Assignments?
-* How often does this use case occur?
+* ~~Is it possible to accept all the Service Assignments at once?~~
+* ~~Do I have to save rejected Service Assignments?~~
