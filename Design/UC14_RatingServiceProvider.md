@@ -15,7 +15,7 @@
 || ... knows the Client who asked for the Service? | ServiceRequest | IE|
 || ... knows which Service was requested? | ServiceRequestDescription | IE|
 || ... knows the Service's cost? | ServiceRequestDescription | IE|
-|| ... knows all the Service Requests? | ServiceRequestRegistry | IE|
+|| ... knows the Service Request related to the Service Description? | ServiceOrder | IE|
 || ... knows the travel cost? | ServiceRequest | IE|
 | 6. The system asks the rating the Client intends to give to the Service Provider. ||||
 
