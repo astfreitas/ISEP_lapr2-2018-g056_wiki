@@ -1,6 +1,6 @@
 # Use Cases Diagram
 
-![Use Cases Diagrams](UseCases/DUC.png)
+![Use Cases Diagram](UseCases/UCD.png)
 
 # Use Cases
 
