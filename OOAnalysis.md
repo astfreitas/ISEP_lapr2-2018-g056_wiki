@@ -220,4 +220,4 @@ Uma associação é uma relação entre instâncias de objectos que indica uma c
 
 ## Modelo de Domínio
 
-![MD_IT3.png](MD_IT3.png)
+![DomainModel.png](DomainModel.png)
