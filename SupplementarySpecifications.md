@@ -3,9 +3,9 @@
 ## Functionalities
 
 -  **Safety:**
-     * User interactions (ie Client, Service Provider, Administrative, Human Resource Employee) must be preceded by an authentication process.
-     * Exceptionally some well defined features are accessible without authentication ("The use of the application by other people is restricted ...").
-     * All application information will have to be stored securely.
+* User interactions (ie Client, Service Provider, Administrative, Human Resource Employee) must be preceded by an authentication process.
+* Exceptionally some well defined features are accessible without authentication ("The use of the application by other people is restricted ...").
+* All application information will have to be stored securely.
 - Notification of users by email as needed.
 
 ## Usability
