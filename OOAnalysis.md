@@ -1,70 +1,67 @@
-# Análise OO #
-O processo de construção do modelo de domínio é baseado nos casos de uso, em especial os substantivos utilizados, e na descrição do enunciado.
-## Racional para identificação de classes de domínio ##
-Para a identificação de classes de domínio usa-se a lista de categorias das aulas TP (sugeridas no livro). Como resultado temos a seguinte tabela de conceitos (ou classes, mas não de software) por categoria.
+# OO Analysis #
 
-### _Lista de Categorias_ ###
+### _Category List_ ###
 
-**Transações (do negócio)**
+**Business Transactions**
 
-* Pedido Prestação Serviço;
-* Candidatura
+* Request Service;
+* Application
 
 ---
 
-**Linhas de transações**
+**Lines of transactions**
 
-* Preferência Horário
-* Descrição Serviço Pedido
-* Outro Custo Adicional
+* Preference Time
+* Service Request Description
+* Other additional cost
 
 ---
 
-**Produtos ou serviços relacionados com transações**
+**Products or services related to transactions**
 
-*  Serviço
-*  Serviço Fixo
-*  Serviço Limitado
-*  Serviço Expansível
+* Service
+* Fixed Service
+* Limited Service
+* Expandable Service
 
 ---
 
 
-**Registos (de transações)**
+**Records (of transactions)**
 
 *  
 
 ---  
 
 
-**Papéis das pessoas**
+** Roles of people **
 
-* Administrativo
-* Funcionário Recursos Humanos (FRH)
-* Cliente
-* Prestador de Serviços
-* Utilizador
-* Utilizador Não Registado
-
----
-
-
-**Lugares**
-
-*  Área Geográfica
-*  Endereço Postal
-* Código Postal
+* Administrative
+* Human Resources (HRO)
+* Client
+* Service provider
+* User
+* Unregistered User
 
 ---
 
-**Eventos**
+
+**Places**
+
+* Geographical area
+* Address
+* Postal Code
+
+---
+
+**Events**
 
 *
 
 ---
 
 
-**Objectos físicos**
+**Physical objects**
 
 *
 
@@ -72,151 +69,140 @@ Para a identificação de classes de domínio usa-se a lista de categorias das a
 ---
 
 
-**Especificações e descrições**
+**Specifications and descriptions**
 
-*  (Especificar) Categoria (de Serviço)
-*  (Especificar) Serviço
-*  Habilitação Académica
-*  Habilitação Profissional
-* Disponibilidade
-*  Tipo de Serviço
-* Estado de Candidatura
-* OrdemServico
+* (Specify) Category
+* (Specify) Service
+* Academic Qualification
+* Professional Qualification
+* Availability
+* Type of service
+* Application Status
+* Service Order
 
 ---
 
 
-**Catálogos**
+**Catalogs**
 
 *  
 
 ---
 
 
-**Conjuntos**
+**Sets**
 
 *
 
 ---
 
 
-**Elementos de Conjuntos**
+**Sets elements**
 
 *  
 
 ---
 
 
-**Organizações**
+**Organizations**
 
-*  Empresa
-
----
-
-**Outros sistemas (externos)**
-
-*  (Componente Gestão Utilizadores)
-*  Servico Externo
+*  Company
 
 ---
 
+**Other systems (external)**
 
-**Registos (financeiros), de trabalho, contractos, documentos legais**
+* (User Management Component)
+* External Service
+
+---
+
+
+**(Financial) records, work, contracts, legal documents**
 
 *
 
 ---
 
 
-**Instrumentos financeiros**
+**Financial instruments**
 
 *  
 
 ---
 
 
-**Documentos referidos/para executar as tarefas/**
+**Referred documents / to perform the tasks**
 
-* Documento Comprovativo   
+* Proof Document  
 
 ---
 
 
 
-###**Racional sobre identificação de associações entre classes**###
+###**Racional sobre identificação de associações entre classes**
 
-Uma associação é uma relação entre instâncias de objectos que indica uma conexão relevante e que vale a pena recordar, ou é derivável da Lista de Associações Comuns:
-
-+ A é fisicamente (ou logicamente) parte de B
-+ A está fisicamente (ou logicamente) contido em B
-+ A é uma descrição de B
-+ A é conhecido/capturado/registado por B
-+ A usa ou gere B
-+ A está relacionado com uma transacção de B + etc.
-
-
-
-| Conceito (A) 		|  Associação   		|  Concept (B) |
+| Concept (A) 		|  Association   		|  Concept (B) |
 |----------	   		|:-------------:		|------:       |
-| Administrativo  	| especifica     	| Categoria  |
-|   					| especifica     	| Serviço  |
-|   					| especifica     	| Área Geográfica  |
-|   					| trabalha para     | Empresa  |
-|						| atua como			| Utilizador |
-| Empresa				| presta     			| Serviço  |
-|						| tem     			| Categoria  |
-|						| atua em    			| Área Geográfica  |
-| 						| possui     			| Cliente  |
-| 						| possui     			| Administrativo  |
-| 						| possui     			| FRH  |
-| 						| possui     			| Prestador de Serviços  |
-| 						| recebe     			| Pedido de Prestação de Serviços  |
-| 						| recebe     			| Candidatura a Prestador de Serviços   |
-| 						|define		| Serviço Externo    |
-| 						|tem (vários)	| Tipo de Serviço    |
-|             |emite        | Ordem de Serviço   |
-| Serviço				| catalogado em     | Categoria  |
-|						| é solicitado em	| Pedido de Prestação de Serviços |
-|						| referido em			| Descrição Serviço Pedido |
-|						| é de (um)		| Tipo Serviço  |
-| Serviço Fixo	| é uma especialização     | Serviço  |
-| Serviço Limitado	| é uma especialização  | Serviço  |
-| Serviço Expansível	| é uma especialização  | Serviço  |
-| Cliente				| possui     			| Endereço Postal  |
-|						| atua como			| Utilizador |
-|						| realiza				| Pedido de Prestação de Serviços |
-| Categoria			| cataloga    		| Serviço  |
-|						| mencionada em     | Candidatura a Prestador de Serviços  |
-|						| mencionada em     | Prestador de Serviços  |
-| Prestador de Serviços| atua como		| Utilizador |
-|  						| indica (várias)| Disponibilidade |
-|  						| realiza serviços em (várias)| Área Geográfica |
-|  						| realiza serviços catalogados em (várias)| Categoria |
-| FRH					| atua como		| Utilizador |
-| Candidatura a Prestador de Serviços |  menciona | Endereço Postal
-| 						|  menciona 		| Habilitação Académica
-| 						|  menciona 		| Habilitação Profissional
-| 						|  menciona 		| Categoria de Serviço
-| 						|  tem anexado 	| Documento Comprovativo
-|             |  tem          | Estado de Candidatura
-| Pedido de Prestação de Serviços 	| é feito por | Cliente |
-| 					   | inclui 			| Outro Custo Adicional |
-| 					   | indica 			| Preferência Horário |
-| 					   | possui 			| Descrição Serviço Pedido |
-|						| para realizar-se em| Endereço Postal |
-| Descrição Serviço Pedido	 | consta	| Pedido de Prestação de Serviços |
-| 								 | referente |  Serviço |
-| Area Geográfica	 | centra-se em	| Codigo Postal|
-|  						 | recorre a		| Serviço Externo|
-|  						 | atua em (vários)| Codigo Postal|
-| Serviço Externo | informa/disponibiliza|(Distância+CódigoPostal)|
-| Endereço Postal	 | tem (um)		| Codigo Postal|
-| Ordem de Serviço | atribuída a | Prestador de Serviço
-|                  | referente a | Pedido de Prestação de Servico |
-
-
-**Nota:** Os serviços externos disponibilizam a distância para códigos postais. Cada par de informação Distância+CódigoPostal é usado para estabelecer a associação "atua em" entre AreaGeografica e CódigoPostal.
-
+| Administrative | specifies | Category |
+| | specifies | Services |
+| | specifies | Geographic Area |
+| | works for | Company |
+| | acts as | User |
+| Company | provides | Services |
+| | has | Category |
+| | acts in | Geographic Area |
+| | has | Customer |
+| | has | Administrative |
+| | has | FRH |
+| | has | Service Provider |
+| | receive | Request for Provision of Services |
+| | receive | Application to Service Provider |
+| | define | External Service |
+| | have (several) | Type of Service |
+|| emits | Service Order |
+|| has | Assignment algorithm |
+| Service | cataloged in | Category |
+| | is requested in | Service Request |
+| | referred to in | Service Request Description |
+| | is of (one) | Type of Service |
+| Fixed Service | is a specialization of | Service |
+| | has | Pre-determined duration |
+| Service Limited | is a specialization of | Service |
+| Expandable Service | is a specialization of | Service |
+| Customer | has | Postal Address |
+| | acts as | User |
+| | realizes | Service Requests |
+| Category | catalogs | Service |
+| | mentioned in | Application to Service Provider |
+| | mentioned in | Service Provider |
+| Service Provider | acts as | User |
+| | indicates (several) | Services |
+| | performs services in (several) | Geographic Area |
+| | performs cataloged services in (several) | Category |
+| FRH | acts as | User |
+| | registers | Service Providers |
+| | evaluates | Service Providers |
+| Application to Service Provider | mentions | Postal code
+| | mentions | Academic Qualification
+| | mentions | Professional Qualification
+| | mentions | Category of Service
+| | has attached | Proof Document
+| | has | Application Status
+| Service Request | is made by | Customer |
+| | includes | Other Additional Cost |
+| | indicates | Preferred Time |
+| | has | Service Request Description |
+| | to be held in | Postal Address |
+| Service Request Description | it | Request for Provision of Services |
+| | reference | Service |
+| Geographic Area | focuses on | Post Code |
+| | resorts to | External Service |
+| | acts in (several) | Post Code |
+| External Service | provides | (Distance + Postal Code) |
+| Postal Address | has (a) | Postal Code |
+| Service Order | attributed to | Service provider
+| | relating to | Request for Service |
 
 ## Modelo de Domínio
 
