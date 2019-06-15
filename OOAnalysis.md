@@ -1,6 +1,8 @@
 # OO Analysis #
 
-### _Category List_ ###
+### Rationale for identifying domain classes ###
+
+### _Categories List_ ###
 
 **Business Transactions**
 
@@ -34,7 +36,7 @@
 ---  
 
 
-** Roles of people **
+**People's roles**
 
 * Administrative
 * Human Resources (HRO)
@@ -140,7 +142,7 @@
 
 
 
-###**Racional sobre identificação de associações entre classes**
+###**Rationale on identifying associations between classes**
 
 | Concept (A) 		|  Association   		|  Concept (B) |
 |----------	   		|:-------------:		|------:       |
@@ -204,6 +206,6 @@
 | Service Order | attributed to | Service provider
 | | relating to | Request for Service |
 
-## Modelo de Domínio
+## Domain Model
 
 ![DomainModel.png](DomainModel.png)
