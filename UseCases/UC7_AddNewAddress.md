@@ -4,8 +4,8 @@ UC7 – Add new address to client
 Brief Description
 -------------
 
-The Client begins the process of adding a new address. 
-The system requests the required data (postal address). The Client enters the requested data 
+The Client begins the process of adding a new address.
+The system requests the required data (postal address). The Client enters the requested data
 The system validates and displays the data, asking for confirmation. The Client
 confirms. The system ** adds the new address to the Client ** and informs of the success of the
 operation
@@ -15,7 +15,7 @@ operation
 SSD
 ---
 
-![SSD_UC7.png](SSD_UC7.png)
+![SSD_UC7.jpg](SSD_UC7.jpg)
 
 Complete Description
 ----------------
@@ -49,7 +49,7 @@ Main success scenario
 5.  The Client confirms.
 6.  The system ** adds the new address to the Client ** and informs of the success of the
 operation.
-    
+
 
 ### Exception conditions (alternative flow)
 

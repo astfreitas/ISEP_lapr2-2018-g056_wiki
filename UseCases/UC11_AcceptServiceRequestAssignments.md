@@ -5,7 +5,7 @@
 The Client begins the Assignment verification. The system displays the Service Assignment Information( Availability , SP rating and classification ). The Client Accepts. The system informs the success of the operation along with the Service Assignment Order
 
 ## SSD
-![SSD_UC11_v2.jpg](SSD_UC11_v2.jpg)
+![SSD_UC11.jpg](SSD_UC11.jpg)
 
 
 ## Full Description

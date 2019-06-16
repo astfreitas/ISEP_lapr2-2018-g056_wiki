@@ -5,7 +5,7 @@
 The service provider starts identifying his/her daily availability. The system requests the required data (i.e. date/time start and end), and may select predetermined options for repetitions (e.g. daily, weekly, biweekly or monthly). The service provider enters the requested data. The system validates and presents the data to the service provider for confirmation. The service provider confirms. The system records the availability of the service provider and informs the service provider of the success of the operation.
 
 ## SSD
-![SSD_UC9_IT3.png](SSD_UC9_IT3.png)
+![SSD_UC9.png](SSD_UC9.png)
 
 ## Full Description
 

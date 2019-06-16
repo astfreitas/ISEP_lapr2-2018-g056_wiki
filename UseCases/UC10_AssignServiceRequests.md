@@ -5,7 +5,7 @@ The Scheduler initiates the assignment of Service Providers to Orders depending 
 
 
 ## SSD
-! [SSD_UC10.png] (SSD_UC10.png)
+![SSD_UC10.png](SSD_UC10.png)
 
 ## Full Description
 
@@ -26,7 +26,7 @@ Time
 ### Postconditions
 * The assignment process is configured and runs as configured.
 
-## Main success scenario 
+## Main success scenario
 
 1. Time starts the process of assigning requests to Service Providers. The assignment algorithm and execution times are provided for the execution of assignments.
 2. Operation completed.

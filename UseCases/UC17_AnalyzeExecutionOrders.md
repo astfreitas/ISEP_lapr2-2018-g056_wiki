@@ -4,7 +4,7 @@
 The Service Provider initiates the analyze execution orders. The systems displays every execution orders and provides the choice to sort the list by the parameters available on execution orders (name, distance between SP and client's postal address, service category, service start date and time, type of service and by client's address). The service provider triggers the desired parameter to sort. The systems sorts the execution orders list by the selected parameter and displays it.
 
 ## SSD
-![SSD_UC17_IT4.png](SSD_UC17_IT4.png)
+![SSD_UC17.png](SSD_UC17.png)
 
 ## Full Description
 
@@ -30,7 +30,7 @@ The SPApplication needs to have the execution orders imported and available.
 
 ### Exception conditions (alternative flow)
 
-*a. The Service Provider request the cancellation of Analyze Execution Orders.
+*a. The Service Provider request the cancellation of analyze Execution Orders.
 > The use case ends.
 
 2.a The system does not have execution orders to display.

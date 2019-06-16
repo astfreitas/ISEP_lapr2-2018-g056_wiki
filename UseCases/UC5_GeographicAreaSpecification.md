@@ -6,7 +6,7 @@ The administrative begins to specify a new geographical area. The system request
 
 
 ## SSD
-![SSD_UC5_IT2.png](SSD_UC5_IT2.png)
+![SSD_UC5.png](SSD_UC5.png)
 
 ## Full Description
 

@@ -5,7 +5,7 @@
 The HRO starts registering the new service provider. System requests the NIF of the service provider to register. The HRO indicates the NIF of the service provider to be registered. System presents the data of the service provider obtained through the application verified and accepted by the company (i.e. full name, NIF, institutional email, postal address, telephone, service categories) and requests confirmation.  The HRO confirms data or proceeds to edit it. The system validates and displays data, asking to confirm. The HRO confirms the data presented by the system. The system registers the data of the new service provider and informs the HRO of the success of the operation. The system sends the authentication data to the new Service Provider.
 
 ## SSD
-![UC8-SSD-IT3.png](SSD_UC8_IT3.png)
+![UC8-SSD.png](SSD_UC8.png)
 
 ## Full Description
 

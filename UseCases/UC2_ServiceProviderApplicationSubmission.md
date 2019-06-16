@@ -5,7 +5,7 @@
 The unregistered user initiates the registration of a new application for service provider. The system requests the necessary data for the application (full name NIF, phone number, email). The unregistered user enters the requested data. The system requests an address (address, postal code, local). The unregistered user enters the data. The system requests academic and professional competences (one or more). The unregistered user enters the requested data. The system shows the service categories and requests the user to select those whose services he wishes to provide (one or more). The unregistered user select the desired categories. The system validates and displays the data, asking to confirm them. The unregistered user confirms the application. The system registers the new application and informs the user that success of the operation.
 ## SSD
 
-![]( SSD_UC2_IT1.png)
+![UC2-SSD.png](SSD_UC2.png)
 ### Primary Actor
 
 Unregistered user

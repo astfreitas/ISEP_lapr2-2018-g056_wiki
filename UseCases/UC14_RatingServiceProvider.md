@@ -1,7 +1,7 @@
 # UC14 - Rating Service Provider
 
 ## Brief Description
-The HRO starts the rating of a service provider. The System presents the Services the client has to rate and asks to select one. The Client tells which Service the rating reffers to. The system asks the Client which rating does he intend to give to the Service Provider. The Clients rates the Service Provider. The System validates and saves the rating and informs the Client of the success of the operation. The System also shows the Invoice of the Service performed by the Service Provider.
+The HRO starts the rating of a service provider. The System presents the Services the client has to rate and asks to select one. The Client tells which Service the rating refers to. The system asks the Client which rating does he intend to give to the Service Provider. The Clients rates the Service Provider. The System validates and saves the rating and informs the Client of the success of the operation. The System also shows the Invoice of the Service performed by the Service Provider.
 
 
 ## SSD
@@ -33,7 +33,7 @@ The Service Provider's rating is saved in the System.
 3. The Clients selects the Service.
 4. The System asks what rating the Clients wants to assign to the Service Provider.
 5. The Clients rates the Service Provider.
-6. The System validates and saves the rating and informs the Client of the success of the operation.The System also shows the Invoice of the Service performed by the Service Provider.
+6. The System validates and saves the rating and informs the Client of the success of the operation. The System also shows the Invoice of the Service performed by the Service Provider.
 
 
 ### Exception conditions (alternative flow)

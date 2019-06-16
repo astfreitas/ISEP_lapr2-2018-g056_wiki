@@ -5,7 +5,7 @@
 The administrative begins to specify a new category. The system requests the required data (i.e., unique code and description). The administrator enters the requested data. The system validates and presents the data to the administrative, asking him to confirm. The administrative confirms. The system records the data and informs the administrativo of the success of the operation.
 
 ## SSD
-![UC3-SSD-IT1.png](SSD_UC3_IT1.png)
+![UC3-SSD.png](SSD_UC3.png)
 
 
 ## Full Description

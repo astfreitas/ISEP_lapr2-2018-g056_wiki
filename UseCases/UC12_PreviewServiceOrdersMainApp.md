@@ -5,7 +5,7 @@
 The Service Provider starts consultation service execution orders. The system requests the period for the execution orders. The provider indicates the period. The system shows the service execution orders and asks if the service provider wants to export this data.
 
 ## SSD
-![SSD_UC12_IT4.png](SSD_UC12_IT4.png)
+![SSD_UC12.png](SSD_UC12.png)
 
 ## Full Description
 
