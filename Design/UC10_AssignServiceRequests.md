@@ -20,7 +20,7 @@
 
 From the rationale it results that the conceptual classes promoted to software classes are:
 
-* ServiceAssigmentTask 
+* ServiceAssigmentTask
 * Timer
 * AssigmnentAlgoritm
 * Company
@@ -32,10 +32,7 @@ From the rationale it results that the conceptual classes promoted to software c
 
 ![SD_UC10.png](SD_UC10.png)
 ![SD_UC10_gate.png](SD_UC10_gate.png)
-![SD_UC10_gate2_FIFO.png](SD_UC10_gate2_FIFO.png)
-![SD_UC10_gate2_random.png](SD_UC10_gate2_random.png)
 
 ##	Class Diagram
 
 ![CD_UC10.png](CD_UC10.png)
-
