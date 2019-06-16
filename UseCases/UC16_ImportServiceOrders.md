@@ -46,4 +46,4 @@ The orders are stored in the system.
 \-
 
 ### Open questions
-\-
+* ~~Should the SP Application validate if the imported orders match the Service Provider?~~
