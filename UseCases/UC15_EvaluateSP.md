@@ -34,8 +34,7 @@ The Service Provider's classification is defined in the system.
 2. The system shows him the list of Service Providers registered and requires to select one.
 3. The HRO selects a Service Provider.
 4. The system displays the SP's rating distribution, statistics and calculated classification (i.e. "Worst", "Regular", "Outstanding") and asks the HRO to accept or modify the classification.
-5.
-	a. The HRO accepts the classification. (step 10)
+5.	a. The HRO accepts the classification. (step 10)
 	b. The HRO chooses to modify the classification. (step 6)
 7. The System provides the possible replacing labels and asks the HRO to choose one.
 8. The HRO chooses ones.
@@ -64,7 +63,7 @@ The Service Provider's classification is defined in the system.
 	1. Average rating for the SP.
 	2. Average rating for all SP's.
 	3. Standard deviation of the ratings for all SP's.
-	2. The absolute differences (deviation) between the average ratings of each service provider and the mean rating of all service providers. ???
+	2. The absolute differences (deviation) between the average ratings of each service provider and the mean rating of all service providers.
 * The SP's classification must be made considering the population mean rating accordingly:
 	1. "Worst Providers": average rating below one std. deviation (sigma) of the population mean average.
 	2. "Regular Providers": average rating between one std. deviation (sigma) bellow and above the population mean average.
