@@ -51,6 +51,4 @@ Service Provider
 
 ### Open questions
 
-* Are there any other mandatory data besides those already known? (i.e Report Issue and Troubleshooting Strategy)
-
-
+* ~~Are there any other mandatory data besides those already known? (i.e Report Issue and Troubleshooting Strategy)~~
