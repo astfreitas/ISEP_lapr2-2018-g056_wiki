@@ -25,17 +25,19 @@
 
 ## Systematization ##
 
- From the rationale results that the following conceptual classes are promoted to software classes are:
-* Company
-* ServiceProvider
-* ExportFileXXXAdapter
+From the rationale results that the following conceptual classes are promoted to software classes are:
+
+ * Company
+ * ServiceProvider
+ * ExportFileXXXAdapter
 
 
-Other software classes (i.e. Pure Fabrication) identified:  
-* ConsultServiceOrderUI
-* ConsultServiceOrderController
-* ServiceOrderRegistry
-* FileTypeRegistry
+Other software classes (i.e. Pure Fabrication) identified:
+
+ * ConsultServiceOrderUI
+ * ConsultServiceOrderController
+ * ServiceOrderRegistry
+ * FileTypeRegistry
 
 
 ##	Detail Diagram

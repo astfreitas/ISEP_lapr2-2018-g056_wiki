@@ -20,7 +20,8 @@ From the rationale results that the following conceptual classes are promoted to
 * Company
 * Service Order
 
-Other software classes (i.e. Pure Fabrication) identified:  
+Other software classes (i.e. Pure Fabrication) identified: 
+
 * AnalyzeServiceOrdersUI
 * AnalyzeServiceOrdersController
 * ServiceOrdersRegistry
@@ -33,4 +34,4 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ##	Class Diagram
 
-![SD_UC17.png](SD_UC17.png)
+![CD_UC17.png](CD_UC17.png)
