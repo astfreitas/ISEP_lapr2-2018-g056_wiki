@@ -33,6 +33,6 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ![SD_UC3.png](SD_UC3.png)
 
-##	Diagrama de Classes
+##	Class Diagram
 
 ![CD_UC3.png](CD_UC3.png)
