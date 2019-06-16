@@ -68,7 +68,7 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ![SD_UC6.jpg](SD_UC6.jpg)
 
-![UC6_Calculate_Cost.jpg](UC6_Calculate_Cost.jpg)
+![SD_UC6_Calculate_Cost.jpg](SD_UC6_Calculate_Cost.jpg)
 
 ##    Class Diagram
 

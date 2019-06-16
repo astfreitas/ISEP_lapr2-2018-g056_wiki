@@ -13,7 +13,7 @@
 |3. The Client selects one.||||
 |4. The system displays the list of Service Assignment Information( Availability , SP rating and classification ) requesting validation.| .. knows Service assigned? | ServiceAssignedRegistry | IE : ServiceAssignedRegistry has all the information about Service Assignments.|
 || .. who knows ServiceAssignmentRegistry ? | Company | LC + HC |
-|5. the client accepts the Assignments.|||| 
+|5. the client accepts the Assignments.||||
 || .. saves service state? | ServiceRequestDescription | IE : The ServiceRequestDescription has information about the state of the request (not assigned, completed, ...) |
 || .. who ServiceRequestDescription? | ServiceAssignment | IE : ServiceAssignment has 1 ServiceRequestDescription |
 || .. creates ServiceOrder? | ServiceOrderRegistry | Creator |
@@ -45,8 +45,8 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ##    Sequence Diagram
 
-![SD_UC11_v2.jpg](SD_UC11_v2.jpg)
+![SD_UC11.jpg](SD_UC11.jpg)
 
 ##    Class Diagram
 
-![CD_UC11_V2.jpg](CD_UC11_V2.jpg)
+![CD_UC11.jpg](CD_UC11.jpg)

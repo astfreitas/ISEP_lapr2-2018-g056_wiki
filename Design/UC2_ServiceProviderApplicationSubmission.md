@@ -58,12 +58,12 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 - SubmitSPApplicationUI
 
-- SubmitSPApplicationController 
+- SubmitSPApplicationController
 
 ## Sequence Diagram
 
-![]( SD_UC2.png)
+![SD_UC2.png]( SD_UC2.png)
 
 ## Class Diagram
 
-![]( CD_UC2.png)
+![CD_UC2.png]( CD_UC2.png)

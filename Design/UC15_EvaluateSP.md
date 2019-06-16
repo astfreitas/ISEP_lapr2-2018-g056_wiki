@@ -35,8 +35,8 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ## Sequence Diagram
 
-![]( SD_UC15.png)
+![SD_UC15.png](SD_UC15.png)
 
 ## Class Diagram
 
-![]( CD_UC15.png)
+![CD_UC15.png](CD_UC15.png)
