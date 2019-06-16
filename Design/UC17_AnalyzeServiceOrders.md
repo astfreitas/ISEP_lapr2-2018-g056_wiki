@@ -34,4 +34,4 @@ Other software classes (i.e. Pure Fabrication) identified:
 
 ##	Class Diagram
 
-![SD_UC17.png](SD_UC17.png)
+![CD_UC17.png](CD_UC17.png)
